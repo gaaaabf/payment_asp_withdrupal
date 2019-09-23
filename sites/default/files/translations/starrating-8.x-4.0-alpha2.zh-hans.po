@@ -1,0 +1,26 @@
+# Chinese, Simplified translation of Star Rating (8.x-4.0-alpha2)
+# Copyright (c) 2017 by the Chinese, Simplified translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Star Rating (8.x-4.0-alpha2)\n"
+"POT-Creation-Date: 2017-07-25 13:44+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Chinese, Simplified\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Check"
+msgstr "检查"
+msgid "Custom"
+msgstr "自定义"
+msgid "Smiley"
+msgstr "表情符号"
+msgid "Movie"
+msgstr "电影"
+msgid "Dollar"
+msgstr "美元"
+msgid "Food"
+msgstr "食品"

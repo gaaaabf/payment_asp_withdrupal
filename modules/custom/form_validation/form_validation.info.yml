@@ -1,0 +1,4 @@
+name: Form Validation Reset Password
+description: 'Validation for email/username in the reset password section'
+type: module
+core: 8.x

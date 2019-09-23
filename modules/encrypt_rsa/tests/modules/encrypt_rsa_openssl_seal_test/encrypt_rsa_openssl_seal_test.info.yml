@@ -1,0 +1,14 @@
+name: 'OpenSSL Seal encryption profile test'
+type: module
+description: 'Provides test keys and encryption profiles for OpenSSL seal encryption method tests.'
+package: 'Encryption'
+# core: 8.x
+hidden: TRUE
+dependencies:
+  - encrypt_rsa:encrypt_rsa
+
+# Information added by Drupal.org packaging script on 2017-12-03
+version: '8.x-1.0-rc01'
+core: '8.x'
+project: 'encrypt_rsa'
+datestamp: 1512322087

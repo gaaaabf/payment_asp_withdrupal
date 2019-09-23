@@ -1,0 +1,4 @@
+name: User Access Hook
+description: 'Restric user access for views'
+type: module
+core: 8.x

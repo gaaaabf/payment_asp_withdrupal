@@ -1,0 +1,4 @@
+name: Product Stock Checker
+description: 'Hide out of stock products in the display list'
+type: module
+core: 8.x

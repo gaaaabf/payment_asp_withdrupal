@@ -1,0 +1,11 @@
+name: Deactivate Account
+type: module
+description: "This module allows a user to delete his/her account or deactivate it temporarily."
+# core: '8.x'
+configure: deactivate_account.admin_config
+
+# Information added by Drupal.org packaging script on 2017-08-08
+version: '8.x-1.0-alpha1'
+core: '8.x'
+project: 'deactivate_account'
+datestamp: 1502177046

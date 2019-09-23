@@ -1,0 +1,14 @@
+name: Amazon Pay and Login with Amazon
+description: Drupal Commerce integration with Amazon Pay and Login with Amazon
+# core: 8.x
+type: module
+dependencies:
+  - commerce
+  - commerce:commerce_order
+  - commerce:commerce_payment
+
+# Information added by Drupal.org packaging script on 2018-06-18
+version: '8.x-2.0-beta1'
+core: '8.x'
+project: 'commerce_amazon_lpa'
+datestamp: 1529335129

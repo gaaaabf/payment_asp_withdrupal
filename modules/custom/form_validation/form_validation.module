@@ -1,0 +1,35 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+
+function form_validation_form_alter(&$form, FormStateInterface $form_state, $form_id){
+   
+   if($form_id == "user_pass"){
+
+   	$form['#validate'][] = 'form_validation_form_validate';
+
+   }
+
+}
+
+
+function form_validation_form_validate($form, FormStateInterface &$form_state) {
+
+  $name = $form_state->getValue('name');
+  $username = user_load_by_name($name);
+  $email = user_load_by_mail($name);
+  	// if (isset($name) && 2 < strlen($name)) {
+    // if (!valid_email_address($name)) {
+    //   $form_state->setErrorByName('email', t('That is not a valid e-mail address.'));
+    // }
+    if(!$username) {
+
+    	if(!$email) {
+    		$form_state->setErrorByName('email', t('Username/Email does not exist'));
+    	}
+    	
+    }
+
+}
+
+

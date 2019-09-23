@@ -1,0 +1,18 @@
+anonymous: Anonymous
+verify_mail: true
+notify:
+  cancel_confirm: true
+  password_reset: true
+  status_activated: true
+  status_blocked: false
+  status_canceled: false
+  register_admin_created: true
+  register_no_approval_required: true
+  register_pending_approval: true
+register: visitors
+cancel_method: user_cancel_block
+password_reset_timeout: 86400
+password_strength: true
+langcode: en
+password_reset_text: 'Due to privacy concerns, the identity of registered email addresses will not be disclosed. Therefore, a password reset link has been sent to you only if you have entered a valid email address or username.
+If the email address or username you entered does not exist, you will not get a reset link or a confirmation/warning about that here. Please contact the site administrator if there are any problems.'

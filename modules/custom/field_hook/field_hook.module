@@ -1,0 +1,24 @@
+<?php
+
+function field_hook_form_alter(&$form, &$form_state, $form_id) {
+	
+$user_roles = \Drupal::currentUser()->getRoles();
+ if($form_id == 'user_form' && in_array('member', $user_roles)):
+    $form['account']['mail']['#disabled'] = TRUE;
+    $form['account']['name']['#disabled'] = TRUE;
+    endif;
+
+if ($form_id == 'user_register_form'){
+	if(in_array('administrator', $user_roles)) {
+		$form['field_store']['widget'][0]['target_id']['#access'] = TRUE;
+	}	
+	else {
+		$form['field_store']['widget'][0]['target_id']['#access'] = FALSE;
+	}
+}
+
+
+
+}
+	 	
+	 	

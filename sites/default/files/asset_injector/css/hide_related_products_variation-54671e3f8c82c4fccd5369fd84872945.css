@@ -1,0 +1,11 @@
+.block-hide .field--name-field-image {
+    display: none;
+}
+
+.block-hide .attribute-widgets {
+ display: none;
+}
+
+.block-hide .field--name-price {
+    display: none;
+}

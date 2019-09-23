@@ -1,0 +1,28 @@
+<?php
+
+	// function user_access_entity_access(\Drupal\Core\Entity\EntityInterface $entity, $operation, \Drupal\Core\Session\AccountInterface $account) {
+
+	  // if ($entity->getEntityType()->id() == 'user' && !$account->id()) {
+	  //   if (!$entity->hasRole('administrator')) {
+	  //     return \Drupal\Core\Access\AccessResult::forbidden();
+	  //   }
+	  // }
+
+		// die($operation);
+		// $current_path = \Drupal::service('path.current')->getPath();
+
+		// if(strcmp($current_path, '/shopstaff/commerce/products') == 0) {
+		// $user_roles = \Drupal::currentUser()->getRoles();
+		// 	if(in_array('shop_staff', $user_roles)) {
+				// return AccessResult::allowed();
+				// $user = \Drupal\user\Entity\User::load($account->id());
+				// $store = $user->get('field_store')->referencedEntities();
+				// die(var_dump($store[0]->getName()));
+				// $store = $user->get('field_store')->referencedEntities();
+				// die(var_dump($user->get('field_store')->target));
+				// die(var_dump($store));
+				// $entity = Node::load($entity_id)->toArray();
+// 			}
+// 		}
+
+// }

@@ -1,0 +1,16 @@
+name: Pubkey Encrypt
+description: Provides support for encrypting data with users' login credentials.
+# core: 8.x
+type: module
+package: Encryption
+configure: pubkey_encrypt.settings
+dependencies:
+  - key
+  - encrypt
+  - encrypt_seclib
+
+# Information added by Drupal.org packaging script on 2016-08-10
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'pubkey_encrypt'
+datestamp: 1470841359

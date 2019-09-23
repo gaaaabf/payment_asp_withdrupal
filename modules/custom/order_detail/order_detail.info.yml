@@ -1,0 +1,4 @@
+name: Order Detail Payment
+description: 'Add payment method in the order detail page'
+type: module
+core: 8.x

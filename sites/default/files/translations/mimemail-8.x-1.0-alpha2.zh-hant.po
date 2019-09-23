@@ -1,0 +1,28 @@
+# Chinese, Traditional translation of Mime Mail (8.x-1.0-alpha2)
+# Copyright (c) 2017 by the Chinese, Traditional translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Mime Mail (8.x-1.0-alpha2)\n"
+"POT-Creation-Date: 2017-05-14 15:49+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Chinese, Traditional\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+msgid "Email settings"
+msgstr "電子郵件設定"
+msgid "Yes"
+msgstr "是"
+msgid "No"
+msgstr "否"
+msgid "Mail"
+msgstr "電子信箱"
+msgid "Email"
+msgstr "電子郵件"
+msgid "About"
+msgstr "關於"
+msgid "Sender name"
+msgstr "寄出者名稱"

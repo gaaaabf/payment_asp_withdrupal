@@ -1,0 +1,13 @@
+name: Encrypt RSA
+type: module
+description: Encrypt your data using RSA cryptosystem
+# core: 8.x
+package: Encryption
+dependencies:
+  - encrypt:encrypt
+
+# Information added by Drupal.org packaging script on 2017-12-03
+version: '8.x-1.0-rc01'
+core: '8.x'
+project: 'encrypt_rsa'
+datestamp: 1512322087

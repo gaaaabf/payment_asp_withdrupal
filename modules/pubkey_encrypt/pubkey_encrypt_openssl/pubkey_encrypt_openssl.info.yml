@@ -1,0 +1,11 @@
+name: Pubkey Encrypt OpenSSL
+description: Provides an OpenSSL-based Asymmetric Keys Generator to be used with Pubkey Encrypt.
+# core: 8.x
+type: module
+package: Encryption
+
+# Information added by Drupal.org packaging script on 2016-08-10
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'pubkey_encrypt'
+datestamp: 1470841359

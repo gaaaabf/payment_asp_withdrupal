@@ -1,0 +1,15 @@
+name: 'Facets Range Dropdowns'
+description: 'Provides processors and a widget to handle ranges with dropdowns in facets.'
+package: Search
+
+# core: 8.x
+type: module
+
+dependencies:
+  - facets:facets
+
+# Information added by Drupal.org packaging script on 2019-05-03
+version: '8.x-1.0-beta1'
+core: '8.x'
+project: 'facets_range_dropdowns'
+datestamp: 1556871489

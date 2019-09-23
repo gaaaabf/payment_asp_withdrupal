@@ -1,0 +1,563 @@
+{#
+/**
+ * @file
+ * Bootstrap Mint's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ * - logo: The url of the logo image, as defined in theme settings.
+ * - site_name: The name of the site. This is empty when displaying the site
+ *   name has been disabled in the theme settings.
+ * - site_slogan: The slogan of the site. This is empty when displaying the site
+ *   slogan has been disabled in theme settings.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - messages: Status and error messages. Should be displayed prominently.
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.sliding_header_one: Items for the Sliding Header Left region.
+ * - page.sliding_header_two: Items for the Sliding Header Right region.
+ * - page.header: Items for the Header region.
+ * - page.primary_menu: Items for the Primary Menu navigation region.
+ * - page.page_title: Region for the current page title.
+ * - page.slideshow: Items for the Slideshow region.
+ * - page.promo: Items for the promo region.
+ * - page.highlighted: Items for the Highlighted region.
+ * - page.topwidget_left: Items for the Top Widget - Left region.
+ * - page.topwidget_middle: Items for the Top Widget - Middle region.
+ * - page.topwidget_right: Items for the Top Widget - Right region.
+ * - page.content_top: Items for the Content Top region.
+ * - page.help: Items for the Help region.
+ * - page.breadcrumb: Items for the Breadcrumb region.
+ * - page.search: The search region.
+ * - page.content: Main content of the current page.
+ * - page.sidebar_first: Items for the Left sidebar region.
+ * - page.sidebar_second: Items for the Right sidebar region.
+ * - page.content_bottom: Items for the Content Bottom region.
+ * - page.footer_top_one: Items for the Footer Top Widget - One region.
+ * - page.footer_top_two: Items for the Footer Top Widget - Two region.
+ * - page.footer_top_three: Items for the Footer Top Widget - Three region.
+ * - page.footer_top_four: Items for the Footer Top Widget - Four region.
+ * - page.footer: Items for the Footer region.
+ * - page.footer_menu: Items for the Footer Menu region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ *
+ * @ingroup themeable
+ */
+#}
+
+<!-- Header and Navbar -->
+<header class="main-header">
+<!-- Sliding Header Widget -->
+{% if is_front %}
+  {% if page.sliding_header_one or page.sliding_header_two %}
+    <div class="slidewidget">
+	<div class="wrapper">
+      <!-- start: Container -->
+      <div class="container">
+        
+        <div class="row">
+          <div id="sliding-header-wrap">
+          <!-- Slide first region -->
+          
+          {% if page.sliding_header_one %}
+            <div class = {{ slidewidget_first }}>
+              {{ page.sliding_header_one }}
+            </div>
+          {% endif %}
+          
+          <!-- End slide first region -->
+          <!-- Slide second region -->
+          
+          {% if page.sliding_header_two %}
+            <div class = {{ slidewidget_class }}>
+              {{ page.sliding_header_two }}
+            </div>
+          {% endif %}
+          
+          <!-- End slide second region -->
+          
+		  </div>
+        </div>
+      </div>
+	  <!-- end: Container -->
+	  </div>
+	  <div class="toggle-switch"><div class="fa fa-gear fa-spin"></div></div>
+    </div>
+  {% endif %}
+{% endif %}
+<!--Sliding Header Widget -->
+  <nav class="navbar topnav navbar-default" role="navigation">
+    <div class="container">
+      <div class="row">
+      <div class="navbar-header col-md-3">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        {% if page.header %}
+          {{ page.header }}
+        {% endif %}
+      </div>
+
+      <!-- Navigation -->
+      <div class="col-md-9">
+        {% if page.primary_menu %}
+          {{ page.primary_menu }}
+        {% endif %}      
+      </div>
+      <!--End Navigation -->
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+  {% if is_front and page.slideshow %}  
+    <div class="container slideshow">
+      <div class="row">
+        <div class="col-md-12">
+            {{ page.slideshow }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <!-- End Banner -->
+
+</header>
+<!--End Header & Navbar -->
+
+
+<!--Search-->
+  {% if is_front and page.search %}
+    {{ page.search }}
+  {% endif %}
+<!--End Search-->
+
+
+<!--Home page banner-->
+  {% if is_front and page.promo %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ page.promo }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+<!--End Home page banner-->
+
+
+<!--Highlighted-->
+  {% if page.highlighted %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ page.highlighted }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+<!--End Highlighted-->
+
+<!--Help-->
+  {% if page.help %}
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          {{ page.help }}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+<!--End Help-->
+
+<!-- Start Top Widget -->
+{% if is_front %}  
+  {% if page.topwidget_left or page.topwidget_middle or page.topwidget_right %}
+    <div class="topwidget">
+      <!-- start: Container -->
+      <div class="container">
+        
+        <div class="row">
+
+          <!-- Top widget left region -->
+          
+          {% if page.topwidget_left %}
+            <div class = {{ topwidget_class }}>
+              {{ page.topwidget_left }}
+            </div>
+          {% endif %}
+          
+          <!-- End top widget left region -->		  
+          <!-- Top widget middle region -->
+          
+          {% if page.topwidget_middle %}
+            <div class = {{ topwidget_class }}>
+              {{ page.topwidget_middle }}
+            </div>
+          {% endif %}
+          
+          <!-- End top widget middle region -->
+          <!-- Top widget right region -->
+          
+          {% if page.topwidget_right %}
+            <div class = {{ topwidget_class }}>
+              {{ page.topwidget_right }}
+            </div>
+          {% endif %}
+          
+          <!-- End top widget right region -->
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
+<!--End Top Widget -->
+
+
+<!-- Page Title -->
+{%  if page.page_title and not is_front %}
+  <div id="page-title">
+    <div id="page-title-inner">
+      <!-- start: Container -->
+      <div class="container-fluid">
+        {{ page.page_title }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+<!-- End Page Title -->
+
+
+<!-- layout -->
+<div id="wrapper">
+  <!-- start: Container -->
+  <div class="container-fluid">
+    
+    <!--Start Content Top-->
+    {% if page.content_top %}
+    <div class="content-top">
+        <div class="row">
+		  <div class="col-md-12">
+            {{ page.content_top }}
+		  </div>
+        </div>
+	</div>
+    {% endif %}
+    <!--End Content Top-->
+    
+    <!--start:Breadcrumbs -->
+	{%  if not is_front %}
+    <div class="row">
+      <div class="col-md-12">{{ page.breadcrumb }}</div>
+    </div>
+	{% endif %}
+    <!--End Breadcrumbs-->
+	
+    <div class="row layout">
+      <!--- Start Left Sidebar -->
+      {% if page.sidebar_first %}
+          <div class = "{{sidebarfirst}} sidebar-first">
+            {{ page.sidebar_first }}
+          </div>
+      {% endif %}
+      <!---End Left Sidebar -->
+
+      <!--- Start content -->
+      {% if page.content %}
+          <div class="{{contentlayout}} content-layout">
+            <div>
+             <ul>
+             	<li>
+             	{% if lang == 'en' %}	
+             		<a href="/multty/user/{{ username }}/edit">View・Update Account Information</a>
+             		<p>You can check and update your account information, such as username and password.</p>
+             	{% elseif lang == 'ja' %}
+             	 	<a href="/multty/user/{{ username }}/edit">会員情報の確認・変更</a>
+             		<p>ユーザー名やパスワードなどのアカウント情報を確認および更新できます。</p>
+             	{% elseif lang == 'zh-hant' %}
+             	 	 <a href="/multty/user/{{ username }}/edit">確認/更改會員信息</a>
+             		<p>您可以查看和更新您的帳戶信息，例如用戶名和密碼。</p>
+             	{% elseif lang == 'zh-hans' %}
+             	 	 <a href="/multty/user/{{ username }}/edit">确认/更改会员信息</a>
+             		<p>您可以查看和更新您的帐户信息，例如用户名和密码。</p>
+             	{% endif %}
+             	</li>
+            	<li>
+            	{% if lang == 'en' %}
+            		<a href="/multty/user/{{ username }}/address-book">Address List</a>
+            		<p>You can check and update the address you have saved during checkout. You may also register new address as well.</p>
+             	{% elseif lang == 'ja' %}
+            		<a href="/multty/user/{{ username }}/address-book">アドレス帳</a>
+            		<p>チェックアウト中に保存したアドレスを確認および更新できます。新しい住所を登録することもできます。</p>
+             	{% elseif lang == 'zh-hant' %}
+             		<a href="/multty/user/{{ username }}/address-book">地址列表</a>
+            		<p>您可以檢查並更新結帳時保存的地址。您也可以註冊新地址。</p>
+            	{% elseif lang == 'zh-hans' %}
+            		<a href="/multty/user/{{ username }}/address-book">地址列表</a>
+            		<p>您可以检查并更新结帐时保存的地址。您也可以注册新地址。</p>		
+            	{% endif %}
+            	</li>
+            	<li>
+             	{% if lang == 'en' %}	
+             		<a href="#">Mail Magazine Subscribe / Unsubscribe</a>
+                <p>You can change email magazine registration and stop delivery.</p>
+             	{% elseif lang == 'ja' %}
+             		<a href="#">メールマガジンの購読/購読解除</a>
+                <p>メールマガジンの登録変更・配信停止の設定ができます。</p>
+             	{% elseif lang == 'zh-hant' %}
+             		<a href="#">郵件雜誌訂閱/取消訂閱</a>
+                <p>您可以更改電子郵件雜誌註冊並停止發送。</p>
+             	{% elseif lang == 'zh-hans' %}
+            	 	<a href="#">邮件杂志订阅/取消订阅</a>
+                <p>您可以更改电子邮件杂志注册并停止发送。</p>
+             	{% endif %}
+            	</li>
+            	<li>
+            	{% if lang == 'en' %}
+            		<a href="/multty/user/{{ username }}/orders">Order History</a>
+            		<p>You can check the products you have purchased.</p>
+            	{% elseif lang == 'ja' %}
+            		<a href="/multty/user/{{ username }}/orders">注文履歴</a>
+            		<p>ご購入頂いた商品を確認できます。</p>
+            	{% elseif lang == 'zh-hant' %}
+            		<a href="/multty/user/{{ username }}/orders">訂單歷史</a>
+            		<p>您可以查看您購買的產品。</p>
+            	{% elseif lang == 'zh-hans' %}
+            		<a href="/multty/user/{{ username }}/orders">订单历史</a>
+            		<p>您可以查看您购买的产品。</p>
+            	{% endif %}
+            	</li>
+              <li>
+              {% if lang == 'en' %}	
+                <a href="/multty/user/{{ username }}/wishlists">Favorites</a>
+                <p>You can check and delete bookmarked favorite products.</p>
+              {% elseif lang == 'ja' %}
+                <a href="/multty/user/{{ username }}/wishlists">お気に入り商品</a>
+                <p>ブックマークしたお気に入り商品の確認・削除ができます。</p>
+              {% elseif lang == 'zh-hant' %}
+                <a href="/multty/user/{{ username }}/wishlists">喜歡的產品</a>
+                <p>您可以查看和刪除已添加書籤的產品。</p>
+              {% elseif lang == 'zh-hans' %}
+                  <a href="/multty/user/{{ username }}/wishlists">喜欢的产品</a>
+                  <p>您可以查看和删除已添加书签的产品。</p>
+              {% endif %}
+              </li>
+            	<li>
+             	{% if lang == 'en' %}	
+             		<a href="/multty/user/{{ username }}/points">Point History</a>
+                <p>You can check the history of points you have earned.</p>
+             	{% elseif lang == 'ja' %}
+             		<a href="/multty/user/{{ username }}/points">ポイント履歴</a>
+                <p>獲得したポイントの履歴が確認できます。</p>
+             	{% elseif lang == 'zh-hant' %}
+             		<a href="/multty/user/{{ username }}/points">點歷史</a>
+                <p>您可以查看獲得積分的歷史記錄。</p>
+             	{% elseif lang == 'zh-hans' %}
+              		<a href="/multty/user/{{ username }}/points">点历史</a>
+                  <p>您可以查看获得积分的历史记录。</p>
+             	{% endif %}
+            	</li>
+            	<li>
+             	{% if lang == 'en' %}	
+             		<a href="/multty/user/{{ username }}/deactivate">Deactivate Account</a>
+                <p>You can deactivate / cancel your membership. All services will be unavailable and all points will be invalid.</p>
+             	{% elseif lang == 'ja' %}
+             		<a href="/multty/user/{{ username }}/deactivate">アカウントを無効化</a>
+                <p>退会手続を行います。すべてのサービスがご利用いただけなくなり、 ポイントもすべて無効となります。</p>
+             	{% elseif lang == 'zh-hant' %}
+            		<a href="/multty/user/{{ username }}/deactivate">關閉戶口</a>
+                <p>我們將取消您的會員資格。 所有服務都將無法使用，所有積分都將無效。</p>
+             	{% elseif lang == 'zh-hans' %}
+            		<a href="/multty/user/{{ username }}/deactivate">关闭户口</a>
+                <p>我们将取消您的会员资格。 所有服务都将无法使用，所有积分都将无效。</p>
+             	{% endif %}
+            	</li>
+            	<li>
+            	{% if lang == 'en' %}	
+            	 	<a href="/multty/user/logout">Log out</a></li>
+            	{% elseif lang == 'ja' %}	 	
+            	 	<a href="/multty/user/logout">ログアウト</a></li>
+             	{% elseif lang == 'zh-hant' %}
+            	 	<a href="/multty/user/logout">登出</a></li>
+             	{% elseif lang == 'zh-hans' %}
+            	 	<a href="/multty/user/logout">登出</a></li>
+             	{% endif %}
+             </ul>
+            </div>
+            </div>
+        {% endif %}
+        <!---End content -->
+
+        <!--- Start Right Sidebar -->
+        {% if page.sidebar_second %}
+            <div class="{{sidebarsecond}} sidebar-second">
+              {{ page.sidebar_second }}
+            </div>
+
+        {% endif %}
+        <!---End Right Sidebar -->
+        
+      </div>
+      <!--End Content -->
+
+      <!--Start Content Bottom-->
+      {% if page.content_bottom %}
+      <div class="content-bottom">
+          <div class="row">
+  		  <div class="col-md-12">
+              {{ page.content_bottom }}
+  		  </div>
+          </div>
+  	</div>
+      {% endif %}
+      <!--End Content Bottom-->
+    </div>
+  </div>
+  <!-- End layout -->
+
+  <!-- Start Footer -->
+    {% if page.footer_top_one or page.footer_top_two or page.footer_top_three or page.footer_top_four %}
+      <div class="footer-widgets">
+        <!-- Start Container -->
+        <div class="container">
+          
+          <div class="row">
+
+            <!-- Start Footer Top One Region -->
+            
+            {% if page.footer_top_one %}
+              <div class = {{ footer_top_class }}>
+                {{ page.footer_top_one }}
+              </div>
+            {% endif %}
+            
+            <!-- End Footer Top One Region -->
+
+            <!-- Start Footer Top Two Region -->
+            {% if page.footer_top_two %}
+              <div class = {{ footer_top_class }}>
+                {{ page.footer_top_two }}
+              </div>
+            {% endif %}
+            
+            <!-- End Footer Top Two Region -->
+
+            <!-- Start Footer Top Three Region -->
+            
+            {% if page.footer_top_three %}
+              <div class = {{ footer_top_class }}>
+                {{ page.footer_top_three }}
+              </div>
+            {% endif %}
+            
+            <!-- End Footer Top Three Region -->
+  		  
+  		  <!-- Start Footer Top Four Region -->
+
+            {% if page.footer_top_four %}
+            <div class = {{ footer_top_class }}>
+              {{ page.footer_top_four }}
+            </div>
+            {% endif %}
+  		  
+  		  <!-- End Footer Top Four Region -->
+
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    <!-- Footer Region-->
+    {% if page.footer %}
+      <div class="footer-space">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              {{ page.footer }}
+            </div>
+        </div>
+        </div>
+  	</div>
+    {% endif %}
+    <!-- End Footer Region-->
+  <!--End Footer -->
+
+  <!-- Start Footer Ribbon -->
+  {% if page.footer_menu %}
+    <div class="footer-ribbon">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            {{ page.footer_menu }}
+          </div>
+          {% if show_social_icon %}
+          <div class="col-sm-6">
+            <div class="social-media">
+              {% if facebook_url %}
+                <a href="{{ facebook_url }}" class="icon-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+              {% endif %}
+              {% if google_plus_url %}
+                <a href="{{ google_plus_url }}" class="icon-gplus" data-toggle="tooltip" data-placement="bottom" title="Google+"><i class="fa fa-google-plus"></i></a>
+              {% endif %}
+              {% if twitter_url %}
+                <a href="{{ twitter_url }}" class="icon-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+              {% endif %}
+              {% if linkedin_url %}
+                <a href="{{ linkedin_url }}" class="icon-linkedin" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+              {% endif %}
+              {% if ytube_url %}
+                <a href="{{ ytube_url }}" class="icon-youtube" data-toggle="tooltip" data-placement="bottom" title="YouTube"><i class="fa fa-youtube-play"></i></a>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  {% endif %}
+  <!-- End Footer Ribbon -->
+
+
+  <!-- #footer-bottom -->
+  <div id="footer-bottom">
+      <div class="container">
+           <div class="row">
+  		 <hr class="style-mint">
+           <div id="toTop" class="col-md-12">
+            <a class="scrollUp"><i class="fa fa-angle-up"></i></a>
+           </div>
+          </div>
+          <div class="row">
+          <div class="col-md-12 copy_credit">
+          <p class="copyright">Copyright &copy; {{ "now"|date("Y") }}. All rights reserved</p>
+          {% if show_credit_link %}
+            <p class="credit">Theme for <a href="https://www.drupal.org/8" target="_blank">Drupal 8</a></p>
+          {% endif %}
+          </div>
+  		</div>
+      </div>
+  </div>
+  <!-- #footer-bottom ends here -->

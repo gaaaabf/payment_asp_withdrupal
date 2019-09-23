@@ -1,0 +1,4 @@
+name: Field Hook
+description: 'Edit profile field access'
+type: module
+core: 8.x
