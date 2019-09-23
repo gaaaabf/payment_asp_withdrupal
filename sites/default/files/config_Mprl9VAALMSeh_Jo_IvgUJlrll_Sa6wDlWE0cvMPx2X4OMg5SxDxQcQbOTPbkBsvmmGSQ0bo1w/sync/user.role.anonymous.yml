@@ -1,0 +1,20 @@
+uuid: a6c2da57-3062-4b61-b26d-0e9c5a9ddf01
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
+id: anonymous
+label: Guest
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'access wishlist'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view Terms and Conditions'
+  - 'view commerce_product'

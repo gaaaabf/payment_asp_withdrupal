@@ -1,0 +1,55 @@
+display:
+  default:
+    display_title: マスター
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 適用
+          reset_button_label: リセット
+          exposed_sorts_label: 並び替え基準
+          sort_asc_label: 昇順
+          sort_desc_label: 降順
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« 最初'
+            last: '最後 »'
+          expose:
+            items_per_page_label: ページ毎の件数
+            items_per_page_options_all_label: '- 全て -'
+            offset_label: オフセット
+      fields:
+        node_bulk_form:
+          action_title: アクション
+        title:
+          label: タイトル
+          separator: ', '
+        uid:
+          label: 投稿者
+          separator: ', '
+        created:
+          separator: ', '
+        changed:
+          label: 更新日時
+          separator: ', '
+        status:
+          label: 掲載
+          separator: ', '
+        edit_node:
+          label: 編集
+          text: 編集
+      filters:
+        status:
+          expose:
+            label: 掲載
+        uid:
+          expose:
+            label: 投稿者
+        combine:
+          expose:
+            label: 含む
+        type:
+          expose:
+            label: タイプ

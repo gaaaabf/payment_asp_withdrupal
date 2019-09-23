@@ -1,0 +1,22 @@
+uuid: 1265b63e-9ebc-4150-a125-af1d0ade4f40
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.career_recruitment
+id: node.career_recruitment.promote
+field_name: promote
+entity_type: node
+bundle: career_recruitment
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

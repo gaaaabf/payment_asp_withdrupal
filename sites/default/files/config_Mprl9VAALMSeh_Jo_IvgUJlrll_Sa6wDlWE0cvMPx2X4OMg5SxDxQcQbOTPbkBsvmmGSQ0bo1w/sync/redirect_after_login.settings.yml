@@ -1,0 +1,9 @@
+login_redirection:
+  anonymous: null
+  authenticated: /
+  administrator: /
+  administrator_multty: /
+  shop_staff: /
+  black_list_user: /
+  member: /user/edit
+exclude_urls: ''

@@ -1,0 +1,27 @@
+uuid: b58c8b85-8608-49a4-aa73-b9aab7346a17
+langcode: en
+status: true
+dependencies: {  }
+id: vat_8_percent
+label: 'VAT (8%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 29961067-394e-4102-932a-66399b5a2869
+      label: VAT
+      percentage: '0.08'
+  territories:
+    -
+      country_code: IR
+      administrative_area: ''
+    -
+      country_code: LU
+    -
+      country_code: PL
+    -
+      country_code: JP
+      administrative_area: ''
+  display_inclusive: true

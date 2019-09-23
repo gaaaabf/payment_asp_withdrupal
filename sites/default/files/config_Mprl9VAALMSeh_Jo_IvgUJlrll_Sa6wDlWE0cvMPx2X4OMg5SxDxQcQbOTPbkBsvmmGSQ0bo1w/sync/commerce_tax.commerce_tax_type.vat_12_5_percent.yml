@@ -1,0 +1,19 @@
+uuid: 64aa0974-99fc-422a-89f7-9dfc8bd166af
+langcode: en
+status: true
+dependencies: {  }
+id: vat_12_5_percent
+label: 'VAT (12.5%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 49e4a40b-6399-4d0a-a0e6-5dca18722869
+      label: VAT
+      percentage: '0.125'
+  territories:
+    -
+      country_code: TT
+  display_inclusive: true

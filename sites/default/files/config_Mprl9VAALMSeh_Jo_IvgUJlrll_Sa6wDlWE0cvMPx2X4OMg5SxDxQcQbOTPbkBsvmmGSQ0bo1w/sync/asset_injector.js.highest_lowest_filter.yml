@@ -1,0 +1,14 @@
+uuid: d8140852-45dc-44fc-b6d2-c14b0530cb7b
+langcode: en
+status: true
+dependencies: {  }
+id: highest_lowest_filter
+label: 'Highest - Lowest Filter'
+code: "jQuery(document).ready(function($) { \r\n  $(\"#edit-sort-by\").change(function() {\r\n  var sortOrder = $(\"#edit-sort-by option:selected\").text();\r\n  if(sortOrder==\"Price\"){\r\n    $(\"#edit-sort-order option[value='ASC']\").text(\"Lowest\");\r\n    $(\"#edit-sort-order option[value='DESC']\").text(\"Highest\");\r\n  } else if (sortOrder==\"Reviews\") {\r\n    $(\"#edit-sort-order option[value='ASC']\").text(\"Lowest\");\r\n    $(\"#edit-sort-order option[value='DESC']\").text(\"Highest\");\r\n  } \r\n  else if (sortOrder==\"Products\"){\r\n    $(\"#edit-sort-order option[value='DESC']\").text(\"Newest\");\r\n    $(\"#edit-sort-order option[value='ASC']\").text(\"Oldest\");\r\n  }\r\n  $(\"#edit-sort-by\").trigger(\"change\");\r\n });\r\n $(\"#edit-sort-by\").trigger(\"change\");\r\n});"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions: {  }
+conditions_require_all: true

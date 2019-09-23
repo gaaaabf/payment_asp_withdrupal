@@ -1,0 +1,23 @@
+uuid: 67f43e7b-089c-4ab1-83b1-5b0e1959788a
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - field_permissions
+    - starrating
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: comment.field_rating
+field_name: field_rating
+entity_type: comment
+type: starrating
+settings: {  }
+module: starrating
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

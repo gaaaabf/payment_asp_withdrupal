@@ -1,0 +1,17 @@
+uuid: 617bdeaa-2596-4a19-a01a-f296579a3ac1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: hide_variation_search
+label: 'Hide variation search'
+code: ".attribute-widgets {\r\n    display: none;\r\n}\r\n"
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/product/*'
+    negate: true
+conditions_require_all: true

@@ -1,0 +1,21 @@
+uuid: 8c9e0797-178b-4a29-831e-07264e3c3797
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_qualifications
+    - node.type.career_recruitment
+  module:
+    - text
+id: node.career_recruitment.field_qualifications
+field_name: field_qualifications
+entity_type: node
+bundle: career_recruitment
+label: Qualifications
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

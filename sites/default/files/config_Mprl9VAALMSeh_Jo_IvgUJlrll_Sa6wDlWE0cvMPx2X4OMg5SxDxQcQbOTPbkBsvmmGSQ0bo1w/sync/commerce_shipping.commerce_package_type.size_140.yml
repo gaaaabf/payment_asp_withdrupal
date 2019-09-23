@@ -1,0 +1,14 @@
+uuid: 71c72c9b-f4bc-4748-af22-e8d6e9d6be3e
+langcode: en
+status: true
+dependencies: {  }
+id: size_140
+label: 'Size 140'
+dimensions:
+  length: '45'
+  width: '50'
+  height: '45'
+  unit: cm
+weight:
+  number: '20'
+  unit: kg

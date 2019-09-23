@@ -1,0 +1,16 @@
+registration_terms_style: 0
+registration_container: 0
+login_terms_style: 0
+login_container: 0
+user_profile_display: false
+accept_every_login: false
+except_roles:
+  administrator: 0
+  administrator_multty: 0
+  shop_staff: 0
+  black_list_user: 0
+  member: 0
+registration_modal_terms: true
+login_modal_terms: true
+_core:
+  default_config_hash: denrqScJlMiBdsks_UljTePRT-AAq-8PPlSluUFaxUs

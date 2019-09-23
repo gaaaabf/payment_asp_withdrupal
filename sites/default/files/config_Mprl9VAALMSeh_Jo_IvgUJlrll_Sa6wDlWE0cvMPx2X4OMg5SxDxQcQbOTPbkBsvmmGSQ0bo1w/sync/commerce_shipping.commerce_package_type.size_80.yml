@@ -1,0 +1,14 @@
+uuid: 1dfccb3b-564c-4735-9559-bb0ba792d0e2
+langcode: en
+status: true
+dependencies: {  }
+id: size_80
+label: 'Size 80'
+dimensions:
+  length: '25'
+  width: '30'
+  height: '25'
+  unit: cm
+weight:
+  number: '5'
+  unit: kg

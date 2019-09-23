@@ -1,0 +1,15 @@
+uuid: 1ea5a94f-f131-4075-8a59-93efa51c78d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_amazon_lpa
+_core:
+  default_config_hash: Mm3hGd9Nynb2IaS-Sq6gqf0BSvdtsW78vYf7q7yyA_A
+id: amazon_pay
+label: 'Amazon Pay'
+plugin: amazon_pay
+configuration:
+  coupons: 1
+  require_shipping_profile: true
+  display_checkout_progress: true

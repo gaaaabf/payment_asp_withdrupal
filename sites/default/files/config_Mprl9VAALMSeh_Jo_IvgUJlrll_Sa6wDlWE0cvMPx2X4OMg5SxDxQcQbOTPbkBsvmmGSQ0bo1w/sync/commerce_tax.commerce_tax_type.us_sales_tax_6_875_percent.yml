@@ -1,0 +1,20 @@
+uuid: 40f80882-b9c7-4ba5-a5f4-bf512a87ce69
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_6_875_percent
+label: 'US Sales Tax (6.875%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 8ab4a015-507a-47cd-85c0-4b3d12901f33
+      label: 'Sales Tax'
+      percentage: '0.06875'
+  territories:
+    -
+      country_code: US
+      administrative_area: MN
+  display_inclusive: true

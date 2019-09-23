@@ -1,0 +1,25 @@
+uuid: 227f602f-234e-43da-adb8-43ac7f5275c4
+langcode: en
+status: true
+dependencies: {  }
+id: shop_staff
+label: 'Shop staff'
+weight: 4
+is_admin: null
+permissions:
+  - 'access comments'
+  - 'administer content translation'
+  - 'create content translations'
+  - 'create default commerce_product'
+  - 'delete any default commerce_product'
+  - 'delete content translations'
+  - 'delete own default commerce_product'
+  - 'edit own comments'
+  - 'manage default commerce_product_variation'
+  - 'translate default commerce_product'
+  - 'update any default commerce_product'
+  - 'update content translations'
+  - 'update own default commerce_product'
+  - 'use text format full_html'
+  - 'view commerce_store'
+  - 'view online commerce_store'

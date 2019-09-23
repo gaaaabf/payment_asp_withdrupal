@@ -1,0 +1,29 @@
+uuid: 910d7425-5b53-4adc-9510-b8c76ea2c81b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+    - field.storage.user.field_store
+  module:
+    - user
+id: user.user.field_store
+field_name: field_store
+entity_type: user
+bundle: user
+label: Store
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_store'
+  handler_settings:
+    target_bundles:
+      online: online
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,25 @@
+uuid: c299be70-85bb-4c90-b754-82b5e2c2eaaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: k5DUtLP3Ov1txHS4bdG4P-EuFoTgXl-zbDfEkdjzJk4
+id: commerce_product.field_related_products
+field_name: field_related_products
+entity_type: commerce_product
+type: entity_reference
+settings:
+  target_type: commerce_product
+module: core
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

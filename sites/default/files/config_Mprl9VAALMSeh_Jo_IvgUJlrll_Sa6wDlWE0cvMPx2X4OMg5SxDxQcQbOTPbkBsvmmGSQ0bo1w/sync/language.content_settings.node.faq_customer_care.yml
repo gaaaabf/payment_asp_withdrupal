@@ -1,0 +1,18 @@
+uuid: a116abae-e7d4-4a07-bc7f-cebb163e7bed
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.faq_customer_care
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.faq_customer_care
+target_entity_type_id: node
+target_bundle: faq_customer_care
+default_langcode: site_default
+language_alterable: false

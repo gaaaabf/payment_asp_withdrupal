@@ -1,0 +1,47 @@
+uuid: 9c8c0a51-2e21-47aa-a19c-f75f2130cbc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+    - field.field.comment.review.comment_body
+    - field.field.comment.review.field_image
+    - field.field.comment.review.field_rating
+    - image.style.thumbnail
+  module:
+    - image
+    - starrating
+    - text
+_core:
+  default_config_hash: NXQbb2LkxkjJV242N88BHrYLc2363n4gSyCAtaZGbzU
+id: comment.review.default
+targetEntityType: comment
+bundle: review
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_rating:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: starrating
+    region: content
+hidden:
+  author: true
+  langcode: true
+  subject: true

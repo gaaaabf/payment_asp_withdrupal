@@ -1,0 +1,18 @@
+uuid: d52ca017-2065-4c63-9841-9c39bd87b0d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.customer_care_topics
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.customer_care_topics
+target_entity_type_id: taxonomy_term
+target_bundle: customer_care_topics
+default_langcode: site_default
+language_alterable: false

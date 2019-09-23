@@ -1,0 +1,14 @@
+uuid: 1f5bfa32-cd0f-43c2-98e4-114c17e9d01b
+langcode: en
+status: false
+dependencies: {  }
+id: autoshipping
+label: AutoShipping
+code: "(function ($, Drupal, drupalSettings) {\r\n  'use strict';\r\n\r\n  /**\r\n   * Checks to see if we can recalculate shipping rates.\r\n   */\r\n  Drupal.commerceCheckShippingRecalculation = function () {\r\n    var shippingSettings = drupalSettings.commerceShipping;\r\n    var recalculate = true;\r\n    $(shippingSettings.wrapper + ' :input.required').filter(':not(.chosen-container)').each(function () {\r\n      if (!$(this).val()) {\r\n        recalculate = false;\r\n      }\r\n    });\r\n\r\n    if (recalculate) {\r\n      return setTimeout(function () {\r\n        // Trigger the mousedown event on the shipping recalculation button.\r\n        $(shippingSettings.wrapper).find(shippingSettings.recalculateButtonSelector).trigger('mousedown');\r\n      }, 100);\r\n    }\r\n  };\r\n\r\n  /**\r\n   * Attaches the shipping recalculate behavior.\r\n   *\r\n   * @type {Drupal~behavior}\r\n   *\r\n  * @prop {Drupal~behaviorAttach} attach\r\n   */\r\n  Drupal.behaviors.commerceShippingRecalculate = {\r\n    attach: function (context) {\r\n      if (context === document) {\r\n        Drupal.commerceCheckShippingRecalculation();\r\n      }\r\n      $(drupalSettings.commerceShipping.wrapper + ' :input.required')\r\n        .once('calculate-shipping')\r\n        .on('change', Drupal.commerceCheckShippingRecalculation);\r\n    }\r\n  };\r\n\r\n})(jQuery, Drupal, drupalSettings);"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: true
+conditions: {  }
+conditions_require_all: true

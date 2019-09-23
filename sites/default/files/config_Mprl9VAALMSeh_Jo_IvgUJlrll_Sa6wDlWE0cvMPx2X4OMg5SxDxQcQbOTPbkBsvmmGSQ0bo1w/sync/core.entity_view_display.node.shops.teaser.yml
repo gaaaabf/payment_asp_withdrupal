@@ -1,0 +1,31 @@
+uuid: f3c2cc6c-7543-4c5b-a4a4-c1b19ccf1b1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.shops.body
+    - node.type.shops
+  module:
+    - text
+    - user
+id: node.shops.teaser
+targetEntityType: node
+bundle: shops
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

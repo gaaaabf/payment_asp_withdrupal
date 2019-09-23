@@ -1,0 +1,41 @@
+display:
+  default:
+    display_title: マスター
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 適用
+          reset_button_label: リセット
+          exposed_sorts_label: 並び替え基準
+          sort_asc_label: 昇順
+          sort_desc_label: 降順
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+            first: '« 最初'
+            last: '最後 »'
+          expose:
+            items_per_page_label: ページ毎の件数
+            items_per_page_options_all_label: '- 全て -'
+            offset_label: オフセット
+      fields:
+        commerce_product_attribute_value_bulk_form:
+          label: 一括更新
+          action_title: アクション
+        attribute:
+          label: 属性
+          separator: ', '
+        attribute_value_id:
+          label: ID
+          separator: ', '
+        name:
+          label: 名前
+          separator: ', '
+      arguments:
+        attribute:
+          exception:
+            title: すべて
+  attribute_page:
+    display_title: ページ

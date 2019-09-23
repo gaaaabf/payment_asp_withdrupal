@@ -1,0 +1,22 @@
+uuid: 4bbb7a80-bb02-4bd5-a635-2f6e5976b859
+langcode: en
+status: true
+dependencies: {  }
+id: vat_23_percent
+label: 'VAT (23%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 0e644617-c50c-45f5-bc42-f9b213b981f3
+      label: VAT
+      percentage: '0.23'
+  territories:
+    -
+      country_code: IE
+      administrative_area: ''
+    -
+      country_code: PT
+  display_inclusive: true

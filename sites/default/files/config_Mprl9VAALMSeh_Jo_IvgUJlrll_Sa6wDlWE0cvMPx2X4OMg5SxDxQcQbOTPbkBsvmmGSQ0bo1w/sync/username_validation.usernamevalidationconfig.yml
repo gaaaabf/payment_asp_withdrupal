@@ -1,0 +1,9 @@
+username_validation: null
+_core:
+  default_config_hash: AIovxDkp_lDsW1hiPN3QCjOsne6vwcPRntsSYiV2tMo
+blacklist_char: '!,@,#,$,%,^,&,*,(,),+,~, ,'',-,='
+min_char: '1'
+max_char: '128'
+ajax_validation: 0
+user_label: ''
+user_desc: 'characters not valid !,@,#,$,%,^,&,*,(,),+,~'

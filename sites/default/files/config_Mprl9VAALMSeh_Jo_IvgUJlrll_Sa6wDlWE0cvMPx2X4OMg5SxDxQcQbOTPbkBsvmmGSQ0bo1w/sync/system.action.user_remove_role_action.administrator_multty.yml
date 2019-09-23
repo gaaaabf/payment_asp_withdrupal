@@ -1,0 +1,14 @@
+uuid: 57218d34-d4f7-4b35-a6f9-297e351bb62c
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administrator_multty
+  module:
+    - user
+id: user_remove_role_action.administrator_multty
+label: 'Remove the Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrator_multty

@@ -1,0 +1,53 @@
+uuid: f4677237-df2d-4af5-bd3f-f5df3fda592f
+langcode: en
+status: true
+dependencies: {  }
+id: vat_20_percent
+label: 'VAT (20%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 39094611-6bfe-4c5c-bfbb-a6185cafe538
+      label: VAT
+      percentage: '0.2'
+  territories:
+    -
+      country_code: AL
+    -
+      country_code: AT
+    -
+      country_code: BY
+    -
+      country_code: BG
+    -
+      country_code: EE
+    -
+      country_code: FR
+    -
+      country_code: MG
+    -
+      country_code: MD
+    -
+      country_code: MC
+    -
+      country_code: MA
+    -
+      country_code: RU
+      administrative_area: ''
+    -
+      country_code: RS
+    -
+      country_code: SK
+    -
+      country_code: UA
+      administrative_area: ''
+    -
+      country_code: GB
+    -
+      country_code: UZ
+    -
+      country_code: CW
+  display_inclusive: true

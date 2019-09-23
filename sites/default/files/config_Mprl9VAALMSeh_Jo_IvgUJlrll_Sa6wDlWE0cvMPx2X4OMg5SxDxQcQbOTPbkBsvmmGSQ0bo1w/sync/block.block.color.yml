@@ -1,0 +1,23 @@
+uuid: 080253bf-db91-4937-8865-5487d06546cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.color
+  module:
+    - facets
+  theme:
+    - bootstrap_mint
+id: color
+theme: bootstrap_mint
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'facet_block:color'
+settings:
+  id: 'facet_block:color'
+  label: Color
+  provider: facets
+  label_display: visible
+  block_id: color
+visibility: {  }

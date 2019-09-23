@@ -1,0 +1,174 @@
+uuid: c960b2a1-a9c3-404b-802f-ce405605a82d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_recruitment.body
+    - field.field.node.career_recruitment.field_application_deadline
+    - field.field.node.career_recruitment.field_available_
+    - field.field.node.career_recruitment.field_benefits
+    - field.field.node.career_recruitment.field_holidays
+    - field.field.node.career_recruitment.field_location
+    - field.field.node.career_recruitment.field_position
+    - field.field.node.career_recruitment.field_qualifications
+    - field.field.node.career_recruitment.field_responsibilities
+    - field.field.node.career_recruitment.field_salary
+    - field.field.node.career_recruitment.field_working_hours
+    - node.type.career_recruitment
+  module:
+    - datetime
+    - office_hours
+    - path
+    - text
+id: node.career_recruitment.default
+targetEntityType: node
+bundle: career_recruitment
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 18
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_application_deadline:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_available_:
+    weight: 9
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_benefits:
+    weight: 17
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_holidays:
+    weight: 14
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_location:
+    weight: 11
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_position:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_qualifications:
+    weight: 15
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_responsibilities:
+    weight: 16
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_salary:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_working_hours:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: office_hours_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

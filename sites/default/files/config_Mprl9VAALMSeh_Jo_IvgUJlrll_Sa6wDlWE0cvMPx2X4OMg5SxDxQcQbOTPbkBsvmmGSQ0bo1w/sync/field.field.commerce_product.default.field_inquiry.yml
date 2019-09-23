@@ -1,0 +1,28 @@
+uuid: 6bc31010-bf4d-42f1-964a-24d133bde9a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_inquiry
+  module:
+    - link
+id: commerce_product.default.field_inquiry
+field_name: field_inquiry
+entity_type: commerce_product
+bundle: default
+label: Inquiry
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:#form'
+    title: 'Inquire This Item'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

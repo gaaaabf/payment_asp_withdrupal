@@ -1,0 +1,33 @@
+uuid: bd6f5a25-1017-4ac7-964c-4a009b2478b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+    - field.storage.commerce_store.field_add
+  module:
+    - address
+id: commerce_store.online.field_add
+field_name: field_add
+entity_type: commerce_store
+bundle: online
+label: Address
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+  fields: {  }
+field_type: address

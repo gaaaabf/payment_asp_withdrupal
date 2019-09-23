@@ -1,0 +1,20 @@
+uuid: 10796ef2-6114-488b-a911-d5516489675d
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_4_75_percent
+label: 'US Sales Tax (4.75%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: f6f03261-4e27-42b7-ae00-2cf7d31298ab
+      label: 'Sales Tax'
+      percentage: '0.0475'
+  territories:
+    -
+      country_code: US
+      administrative_area: NC
+  display_inclusive: true

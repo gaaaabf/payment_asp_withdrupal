@@ -1,0 +1,14 @@
+uuid: 6b405554-e47c-47cb-b795-6ef8b60fb434
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.administrator_multty
+  module:
+    - user
+id: user_add_role_action.administrator_multty
+label: 'Add the Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrator_multty

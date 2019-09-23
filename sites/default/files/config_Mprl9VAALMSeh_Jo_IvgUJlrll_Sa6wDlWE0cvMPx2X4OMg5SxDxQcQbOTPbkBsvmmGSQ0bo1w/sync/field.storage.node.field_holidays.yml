@@ -1,0 +1,20 @@
+uuid: 386e5d03-b29e-4b91-aa10-dede508122f2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_holidays
+field_name: field_holidays
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

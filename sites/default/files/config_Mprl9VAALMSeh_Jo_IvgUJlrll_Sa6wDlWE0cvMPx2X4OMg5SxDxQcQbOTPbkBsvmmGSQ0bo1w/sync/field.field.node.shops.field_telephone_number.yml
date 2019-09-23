@@ -1,0 +1,21 @@
+uuid: cbffc4a6-3cec-495f-a086-f0e63e41a10a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone_number
+    - node.type.shops
+  module:
+    - telephone
+id: node.shops.field_telephone_number
+field_name: field_telephone_number
+entity_type: node
+bundle: shops
+label: 'Telephone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

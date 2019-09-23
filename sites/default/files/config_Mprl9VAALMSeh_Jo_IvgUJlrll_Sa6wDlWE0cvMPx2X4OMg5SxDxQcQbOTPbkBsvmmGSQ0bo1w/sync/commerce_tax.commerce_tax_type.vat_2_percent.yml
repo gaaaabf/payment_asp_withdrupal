@@ -1,0 +1,19 @@
+uuid: 6bfec1fb-7b37-4146-93bc-b4327f193c5b
+langcode: en
+status: true
+dependencies: {  }
+id: vat_2_percent
+label: 'VAT (2%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: f4a00533-f6a5-4ac1-8c3e-368e84660066
+      label: VAT
+      percentage: '0.02'
+  territories:
+    -
+      country_code: GU
+  display_inclusive: true

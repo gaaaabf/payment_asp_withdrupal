@@ -1,0 +1,13 @@
+uuid: 40a52fe9-3435-4366-ae44-886870a57c37
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: LLRMbjl5uTo6tG3ohdtoA5JJ2B9iXfENB4NZKynijfA
+id: commerce_bulk_variation_hook
+label: 'Pass to hook'
+type: commerce_product_variation
+plugin: commerce_bulk_variation_hook
+configuration: {  }

@@ -1,0 +1,21 @@
+uuid: 146cd3b5-8c54-4b55-9f6d-79a6a964571f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_operation_hours
+    - node.type.shops
+  module:
+    - office_hours
+id: node.shops.field_operation_hours
+field_name: field_operation_hours
+entity_type: node
+bundle: shops
+label: 'Operation Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

@@ -1,0 +1,19 @@
+uuid: e57bc3ed-6358-41e8-bc60-c96b9fcee4cb
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_store
+    - link
+id: commerce_store.field_link
+field_name: field_link
+entity_type: commerce_store
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

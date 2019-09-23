@@ -1,0 +1,14 @@
+uuid: 0d5b113b-d6d5-4132-9873-6c7de95ec72d
+langcode: en
+status: true
+dependencies: {  }
+id: size_120
+label: 'Size 120'
+dimensions:
+  length: '40'
+  width: '45'
+  height: '35'
+  unit: cm
+weight:
+  number: '15'
+  unit: kg

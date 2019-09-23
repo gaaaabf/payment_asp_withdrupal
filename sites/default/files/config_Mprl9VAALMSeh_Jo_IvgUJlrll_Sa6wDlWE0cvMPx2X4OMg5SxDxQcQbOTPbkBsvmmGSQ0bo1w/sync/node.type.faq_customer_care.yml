@@ -1,0 +1,17 @@
+uuid: 1da872e6-8d2b-496a-b516-7fd94d956e0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'FAQ / Customer Care'
+type: faq_customer_care
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

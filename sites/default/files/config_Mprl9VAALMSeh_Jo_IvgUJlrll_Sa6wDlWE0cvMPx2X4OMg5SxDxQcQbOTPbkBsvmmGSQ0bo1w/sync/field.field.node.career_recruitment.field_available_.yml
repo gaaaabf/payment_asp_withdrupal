@@ -1,0 +1,23 @@
+uuid: c3d988da-c2ac-417f-94c2-092d9eca10ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_available_
+    - node.type.career_recruitment
+id: node.career_recruitment.field_available_
+field_name: field_available_
+entity_type: node
+bundle: career_recruitment
+label: 'Available Slots'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

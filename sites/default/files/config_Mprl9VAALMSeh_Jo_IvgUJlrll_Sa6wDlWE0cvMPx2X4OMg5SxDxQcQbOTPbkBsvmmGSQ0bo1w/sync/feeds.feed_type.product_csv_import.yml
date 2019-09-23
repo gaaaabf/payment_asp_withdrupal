@@ -1,0 +1,129 @@
+uuid: 12b326ec-06ae-4a6d-a7c1-b3598ba987f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.field.commerce_product.default.field_category
+    - field.field.commerce_product.default.field_keywords
+    - field.field.commerce_product.default.field_product_tags
+    - field.field.commerce_product.default.field_related_products
+  module:
+    - commerce_product
+    - feeds_tamper
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      b503add3-4c7b-44d4-8f22-d96dcd98e0d5:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: product_tags
+        weight: 0
+        label: Explode
+        uuid: b503add3-4c7b-44d4-8f22-d96dcd98e0d5
+      e3c89400-8385-4118-9fb1-9569d8c1681d:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: categories
+        weight: 0
+        label: Explode
+        uuid: e3c89400-8385-4118-9fb1-9569d8c1681d
+      f63d485b-9a5f-4ae7-bed0-aedc7fc47eb3:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: keywords
+        weight: 0
+        label: Explode
+        uuid: f63d485b-9a5f-4ae7-bed0-aedc7fc47eb3
+      fd8ee6f8-a593-4c3c-b36b-f1f74d344284:
+        separator: ','
+        limit: null
+        plugin: explode
+        source: related_products
+        weight: 0
+        label: Explode
+        uuid: fd8ee6f8-a593-4c3c-b36b-f1f74d344284
+label: 'Product CSV Import'
+id: product_csv_import
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:commerce_product'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: default
+custom_sources:
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  product_tags:
+    label: 'Product Tags'
+    value: 'Product Tags'
+    machine_name: product_tags
+  categories:
+    label: Categories
+    value: Categories
+    machine_name: categories
+  keywords:
+    label: Keywords
+    value: Keywords
+    machine_name: keywords
+  related_products:
+    label: 'Related Products'
+    value: 'Related Products'
+    machine_name: related_products
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+  -
+    target: field_product_tags
+    map:
+      target_id: product_tags
+    settings:
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_category
+    map:
+      target_id: categories
+    settings:
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_keywords
+    map:
+      target_id: keywords
+    settings:
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_related_products
+    map:
+      target_id: related_products
+    settings:
+      reference_by: title
+      autocreate: false
+      feeds_item: false

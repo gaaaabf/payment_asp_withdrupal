@@ -1,0 +1,20 @@
+uuid: 488a667b-0d65-4ad2-bd45-67a6db3e9d62
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_10_5_percent
+label: 'US Sales Tax (10.5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: f2a7993f-6ea9-43a1-99ed-d4fb36d09b7a
+      label: 'Sales Tax'
+      percentage: '0.105'
+  territories:
+    -
+      country_code: US
+      administrative_area: PR
+  display_inclusive: true

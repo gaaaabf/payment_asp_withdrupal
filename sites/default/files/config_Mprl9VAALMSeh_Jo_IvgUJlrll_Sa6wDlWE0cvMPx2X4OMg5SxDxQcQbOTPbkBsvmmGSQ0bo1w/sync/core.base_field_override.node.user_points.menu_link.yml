@@ -1,0 +1,20 @@
+uuid: 13273008-dffd-4c1d-be69-dae6137c5911
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+id: node.user_points.menu_link
+field_name: menu_link
+entity_type: node
+bundle: user_points
+label: メニューリンク
+description: 'Computed menu link for the node (only available during node saving).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

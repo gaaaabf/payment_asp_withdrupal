@@ -1,0 +1,20 @@
+uuid: 0918f86c-b2fe-49a0-a799-f1860e1ed45d
+langcode: en
+status: true
+dependencies: {  }
+id: vat_4_5_percent
+label: 'VAT (4.5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 698a609e-2343-4668-a088-274d6861d2af
+      label: VAT
+      percentage: '0.045'
+  territories:
+    -
+      country_code: AD
+      locality: ''
+  display_inclusive: true

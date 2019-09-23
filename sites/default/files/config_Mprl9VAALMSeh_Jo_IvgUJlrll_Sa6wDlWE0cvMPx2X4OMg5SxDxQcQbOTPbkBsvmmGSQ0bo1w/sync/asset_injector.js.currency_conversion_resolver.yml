@@ -1,0 +1,20 @@
+uuid: 0004fe7d-7266-480f-ade6-ac81440a16a1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+id: currency_conversion_resolver
+label: 'Currency Conversion Resolver'
+code: "console.log('Starting');\r\nvar max = document.querySelectorAll('#edit-currency input[type=\"checkbox\"]').length;\r\nfor(i = 0; i != max; i++){\r\n  var valueof = document.querySelectorAll('#edit-currency input[type=\"checkbox\"]')[i].getAttribute('data-drupal-selector');\r\n\r\n  checks(document.querySelectorAll('#edit-currency input[type=\"checkbox\"]')[i]);\r\n  \r\n  document.querySelectorAll('#edit-currency input[type=\"checkbox\"]')[i].addEventListener(\"change\", function(){ \r\n    var target = this.getAttribute('data-drupal-selector');\r\n    var newtarget = target.replace('sync-1', 'value');\r\n    console.log(newtarget);\r\n    toggle(newtarget, this);\r\n  });\r\n}\r\n\r\nfunction toggle(newtarget, checkbox) {\r\n  var res = checkbox.checked;\r\n  if(res === true) {\r\n    document.getElementById('newtarget').removeAttribute(\"disabled\");  \r\n  } else {\r\n    document.getElementById('newtarget').setAttribute(\"disabled\",\"disabled\");  \r\n  }\r\n  \r\n}\r\n\r\nfunction checks(html){\r\n  var checking = html.checked;\r\n  var target = html.getAttribute('data-drupal-selector');\r\n  var newtarget = target.replace('sync-1', 'value');\r\n  console.log(newtarget);\r\n  if(checking === true) {\r\n    document.getElementById('newtarget').setAttribute(\"disabled\",\"disabled\");\r\n  } else {\r\n    document.getElementById('newtarget').removeAttribute(\"disabled\");\r\n  }\r\n}"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: /admin/commerce/config/commerce_currency_resolver/conversion
+    negate: false
+conditions_require_all: true

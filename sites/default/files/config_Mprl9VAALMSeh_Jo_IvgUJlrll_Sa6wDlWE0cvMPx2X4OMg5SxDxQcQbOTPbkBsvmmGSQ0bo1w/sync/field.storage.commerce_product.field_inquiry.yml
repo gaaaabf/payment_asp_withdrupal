@@ -1,0 +1,23 @@
+uuid: 94f9a0db-12c2-4f7c-a24f-4a191d5ccfa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - field_permissions
+    - link
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: commerce_product.field_inquiry
+field_name: field_inquiry
+entity_type: commerce_product
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

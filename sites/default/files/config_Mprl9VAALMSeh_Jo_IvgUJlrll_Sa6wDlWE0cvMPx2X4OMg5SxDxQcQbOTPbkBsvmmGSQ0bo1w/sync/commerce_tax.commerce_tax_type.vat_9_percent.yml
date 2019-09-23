@@ -1,0 +1,21 @@
+uuid: e38954d1-a375-40bb-96b8-3dd9f3ef09e7
+langcode: en
+status: true
+dependencies: {  }
+id: vat_9_percent
+label: 'VAT (9%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: a2768120-4119-42d3-8d8c-9e494760b147
+      label: VAT
+      percentage: '0.09'
+  territories:
+    -
+      country_code: FJ
+    -
+      country_code: NL
+  display_inclusive: true

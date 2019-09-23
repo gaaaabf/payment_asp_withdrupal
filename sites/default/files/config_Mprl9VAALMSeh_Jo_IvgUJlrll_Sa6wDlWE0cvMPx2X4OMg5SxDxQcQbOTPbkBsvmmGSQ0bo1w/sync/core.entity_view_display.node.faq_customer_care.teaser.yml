@@ -1,0 +1,31 @@
+uuid: 4c3fd403-24fd-4dee-adaf-ebe806feec78
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faq_customer_care.body
+    - node.type.faq_customer_care
+  module:
+    - text
+    - user
+id: node.faq_customer_care.teaser
+targetEntityType: node
+bundle: faq_customer_care
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

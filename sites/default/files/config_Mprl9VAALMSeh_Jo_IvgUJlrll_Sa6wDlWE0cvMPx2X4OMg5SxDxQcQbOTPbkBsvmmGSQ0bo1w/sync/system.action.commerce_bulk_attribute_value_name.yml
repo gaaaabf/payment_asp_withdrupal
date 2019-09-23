@@ -1,0 +1,13 @@
+uuid: 16b7cb64-d97f-467b-91f9-806f204e59c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: s1FG0wSVbbrEYpzXuI-nIe-pArFYnG1BLifmFrlDCmo
+id: commerce_bulk_attribute_value_name
+label: 'Change or add names'
+type: commerce_product_attribute_value
+plugin: commerce_bulk_attribute_value_name
+configuration: {  }

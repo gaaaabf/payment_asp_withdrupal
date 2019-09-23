@@ -1,0 +1,19 @@
+uuid: a87b91b8-7347-4d44-9f60-ef8d121a2b4e
+langcode: en
+status: true
+dependencies: {  }
+id: vat_11_5_
+label: 'VAT (11.5%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: c36b7f96-3609-4b6e-a947-e8823ceaedc8
+      label: VAT
+      percentage: '0.115'
+  territories:
+    -
+      country_code: PR
+  display_inclusive: true

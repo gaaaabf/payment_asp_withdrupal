@@ -1,0 +1,21 @@
+uuid: 3f188895-2351-45d7-9828-96716a9f8f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_working_hours
+    - node.type.career_recruitment
+  module:
+    - office_hours
+id: node.career_recruitment.field_working_hours
+field_name: field_working_hours
+entity_type: node
+bundle: career_recruitment
+label: 'Working Hours'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: office_hours

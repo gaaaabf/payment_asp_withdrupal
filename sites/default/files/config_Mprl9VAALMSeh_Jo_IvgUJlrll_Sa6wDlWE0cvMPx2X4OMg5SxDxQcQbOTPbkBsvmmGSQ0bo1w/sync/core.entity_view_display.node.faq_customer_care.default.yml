@@ -1,0 +1,54 @@
+uuid: 94217658-cabe-4b71-8de4-e09d86e29a64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq_customer_care.body
+    - field.field.node.faq_customer_care.field_faq
+    - field.field.node.faq_customer_care.field_topic
+    - node.type.faq_customer_care
+  module:
+    - faqfield
+    - text
+    - user
+id: node.faq_customer_care.default
+targetEntityType: node
+bundle: faq_customer_care
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_faq:
+    weight: 3
+    label: hidden
+    settings:
+      active: 0
+      heightStyle: content
+      event: click
+      animate:
+        duration: 200
+        easing: linear
+      collapsible: false
+    third_party_settings: {  }
+    type: faqfield_accordion
+    region: content
+  field_topic:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

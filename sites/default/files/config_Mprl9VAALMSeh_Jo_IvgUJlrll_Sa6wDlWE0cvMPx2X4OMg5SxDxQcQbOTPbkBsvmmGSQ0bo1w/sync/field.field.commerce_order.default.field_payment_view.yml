@@ -1,0 +1,88 @@
+uuid: 466f04f6-0c36-43b6-9f11-a98802262abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_payment_view
+    - views.view.payment_view
+  module:
+    - viewfield
+id: commerce_order.default.field_payment_view
+field_name: field_payment_view
+entity_type: commerce_order
+bundle: default
+label: 'Payment View'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    token_help: ''
+    display_id: page_1
+    arguments: '[commerce_order:order_id]'
+    items_to_display: ''
+    target_uuid: 3c0f293f-7e2b-47c5-aa10-cc154bd16ff4
+default_value_callback: ''
+settings:
+  force_default: 1
+  allowed_views:
+    commerce_activity: 0
+    arrivals: 0
+    career_recruit: 0
+    commerce_cart_block: 0
+    commerce_cart_form: 0
+    commerce_carts: 0
+    categories: 0
+    commerce_checkout_order_summary: 0
+    comment: 0
+    commerce_bulk_attributes: 0
+    content: 0
+    block_content: 0
+    duplicate_of_checkout_order_summary: 0
+    feeds_feed: 0
+    files: 0
+    frontpage: 0
+    google_analytics_reports_page: 0
+    google_analytics_summary: 0
+    legal_terms: 0
+    legal_users: 0
+    commerce_order_item_table: 0
+    commerce_orders: 0
+    order_shipments: 0
+    payment_view: 0
+    user_admin_people: 0
+    my_points: 0
+    product_detail: 0
+    commerce_products: 0
+    product_search: 0
+    product_stock_list: 0
+    profiles: 0
+    comments_recent: 0
+    content_recent: 0
+    recommended_product: 0
+    review_ratings: 0
+    commerce_stores: 0
+    taxonomy_term: 0
+    commerce_user_orders: 0
+    user_points: 0
+    commerce_user_wishlists: 0
+    commerce_bulk_variations_tab: 0
+    watchdog: 0
+    webform_submissions: 0
+    who_s_new: 0
+    who_s_online: 0
+    commerce_wishlist_form: 0
+    commerce_wishlist_item_table: 0
+    commerce_wishlists: 0
+  allowed_display_types:
+    block: block
+    page: page
+    attachment: 0
+    data_export: 0
+    embed: 0
+    feed: 0
+    default: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

@@ -1,0 +1,30 @@
+uuid: 9507346c-4fb7-4aef-bc36-5cdc819ee88e
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_order.commerce_order_type.default
+    - field.storage.commerce_order.field_payment
+id: commerce_order.default.field_payment
+field_name: field_payment
+entity_type: commerce_order
+bundle: default
+label: 'Payment Method'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_payment_method'
+  handler_settings:
+    target_bundles:
+      credit_card: credit_card
+      credit_card_encrypted: credit_card_encrypted
+      paypal: paypal
+      paypal_checkout: paypal_checkout
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: credit_card
+field_type: entity_reference

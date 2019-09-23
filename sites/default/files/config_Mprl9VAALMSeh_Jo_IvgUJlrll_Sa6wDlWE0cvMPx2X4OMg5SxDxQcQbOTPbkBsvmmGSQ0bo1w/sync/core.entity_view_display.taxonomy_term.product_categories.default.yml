@@ -1,0 +1,32 @@
+uuid: 76310c9e-9780-4c69-aa4a-399cf0438101
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.product_categories.field_image
+    - taxonomy.vocabulary.product_categories
+  module:
+    - file
+    - text
+id: taxonomy_term.product_categories.default
+targetEntityType: taxonomy_term
+bundle: product_categories
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    weight: 3
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden:
+  langcode: true

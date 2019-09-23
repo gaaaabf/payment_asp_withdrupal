@@ -1,0 +1,7 @@
+uuid: 5d086d78-8f48-4cd4-9517-5d00acbabe77
+langcode: en
+status: true
+dependencies: {  }
+id: chilled
+label: 'Cool Shipping'
+traits: {  }

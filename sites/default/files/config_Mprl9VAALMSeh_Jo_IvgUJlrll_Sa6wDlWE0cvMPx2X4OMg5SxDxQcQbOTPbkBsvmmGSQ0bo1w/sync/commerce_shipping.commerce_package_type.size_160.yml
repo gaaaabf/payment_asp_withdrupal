@@ -1,0 +1,14 @@
+uuid: 9afb842e-143e-44c6-af46-cad6ba68bce5
+langcode: en
+status: true
+dependencies: {  }
+id: size_160
+label: 'Size 160'
+dimensions:
+  length: '50'
+  width: '60'
+  height: '50'
+  unit: cm
+weight:
+  number: '25'
+  unit: kg

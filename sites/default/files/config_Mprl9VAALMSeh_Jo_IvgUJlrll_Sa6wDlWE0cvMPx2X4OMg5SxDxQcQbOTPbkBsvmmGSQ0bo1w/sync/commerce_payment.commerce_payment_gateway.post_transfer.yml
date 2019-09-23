@@ -1,0 +1,27 @@
+uuid: a398cd1a-03d6-4857-a9d5-3d883cc33229
+langcode: en
+status: true
+dependencies: {  }
+id: post_transfer
+label: 'Post Transfer'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: "<p>Please use the payment form provided by the post office and transfer it to the designated account from the post office window or the ATM corresponding to the payment form.</p>\r\n\r\n<p>As soon as payment is confirmed, we will ship the item. We will send you the name of your bank account in the order confirmation email. (Transfer fee (about 80-330 yen) will be paid by the customer)</p>\r\n"
+    format: full_html
+  display_label: 'Post Transfer'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions:
+  -
+    plugin: order_billing_address
+    configuration:
+      zone:
+        territories:
+          -
+            country_code: JP
+            administrative_area: ''
+conditionOperator: AND

@@ -1,0 +1,9 @@
+role_to_select:
+  member: member
+  administrator: 0
+  administrator_multty: 0
+  shop_staff: 0
+  black_list_user: 0
+registration_mode: user
+_core:
+  default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM

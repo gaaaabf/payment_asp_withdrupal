@@ -1,0 +1,23 @@
+uuid: 4310bb48-f82a-46bf-b4f0-68f72605ef62
+langcode: en
+status: true
+dependencies: {  }
+id: vat_24_percent
+label: 'VAT (24%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 488b141e-ab07-4987-9276-93cd619972d4
+      label: VAT
+      percentage: '0.24'
+  territories:
+    -
+      country_code: FI
+    -
+      country_code: GR
+    -
+      country_code: IS
+  display_inclusive: true

@@ -1,0 +1,23 @@
+uuid: ac5bb939-91a0-4102-b4d6-5c00b490fec4
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.tags
+  module:
+    - facets
+  theme:
+    - bootstrap_mint
+id: tags
+theme: bootstrap_mint
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'facet_block:tags'
+settings:
+  id: 'facet_block:tags'
+  label: Tags
+  provider: facets
+  label_display: visible
+  block_id: tags
+visibility: {  }

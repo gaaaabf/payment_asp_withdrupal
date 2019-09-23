@@ -1,0 +1,6 @@
+currency_mapping: cookie
+currency_source: auto
+currency_default: JPY
+_core:
+  default_config_hash: jPNmQDGPUISXnHhKlLg5JxiGdcRxG_XrOF1ImY5VIks
+currency_geo: null

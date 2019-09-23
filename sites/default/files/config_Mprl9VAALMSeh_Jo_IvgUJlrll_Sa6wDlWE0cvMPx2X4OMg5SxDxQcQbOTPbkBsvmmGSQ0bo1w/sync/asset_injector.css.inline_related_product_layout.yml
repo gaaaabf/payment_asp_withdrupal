@@ -1,0 +1,11 @@
+uuid: c9835dc4-28cf-4891-93fa-a1ce8ac932d4
+langcode: en
+status: true
+dependencies: {  }
+id: inline_related_product_layout
+label: 'Inline Related Product Layout'
+code: ".views-field.views-field-field-related-products .field-content {\r\n    display: flex;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

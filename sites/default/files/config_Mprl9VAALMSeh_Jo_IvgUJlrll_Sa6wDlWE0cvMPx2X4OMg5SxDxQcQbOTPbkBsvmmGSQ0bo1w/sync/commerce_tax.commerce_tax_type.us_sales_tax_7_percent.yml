@@ -1,0 +1,29 @@
+uuid: d363df23-925a-4f28-8909-a9d27ac84f1a
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_7_percent
+label: 'US Sales Tax (7%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 3e5f36f4-0041-46b4-81e8-c86f06abcfd3
+      label: 'Sales Tax'
+      percentage: '0.07'
+  territories:
+    -
+      country_code: US
+      administrative_area: TN
+    -
+      country_code: US
+      administrative_area: RI
+    -
+      country_code: US
+      administrative_area: MS
+    -
+      country_code: US
+      administrative_area: IN
+  display_inclusive: true

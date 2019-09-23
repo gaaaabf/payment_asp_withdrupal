@@ -1,0 +1,23 @@
+uuid: 6bf19bf5-2231-45df-a625-aad02b2499b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sites_social_media
+    - node.type.shops
+  module:
+    - link
+id: node.shops.field_sites_social_media
+field_name: field_sites_social_media
+entity_type: node
+bundle: shops
+label: 'Sites / Social Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

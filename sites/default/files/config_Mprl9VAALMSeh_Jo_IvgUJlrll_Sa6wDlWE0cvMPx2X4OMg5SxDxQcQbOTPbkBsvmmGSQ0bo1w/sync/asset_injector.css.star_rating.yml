@@ -1,0 +1,11 @@
+uuid: 352e11b0-eb17-4f66-a9e9-d64fec3dc5fe
+langcode: en
+status: false
+dependencies: {  }
+id: star_rating
+label: 'Star Rating'
+code: ".star-ratings {\r\n  unicode-bidi: bidi-override;\r\n  color: #ccc;\r\n  font-size: 30px;\r\n  position: relative;\r\n  margin: 0;\r\n  padding: 0;\r\n}\r\n.star-ratings .fill-ratings {\r\n  color: #e7711b;\r\n  padding: 0;\r\n  position: absolute;\r\n  z-index: 1;\r\n  display: block;\r\n  top: 0;\r\n  left: 0;\r\n  overflow: hidden;\r\n}\r\n.star-ratings .fill-ratings span {\r\n  display: inline-block;\r\n}\r\n.star-ratings .empty-ratings {\r\n  padding: 0;\r\n  display: block;\r\n  z-index: 0;\r\n}\r\n"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

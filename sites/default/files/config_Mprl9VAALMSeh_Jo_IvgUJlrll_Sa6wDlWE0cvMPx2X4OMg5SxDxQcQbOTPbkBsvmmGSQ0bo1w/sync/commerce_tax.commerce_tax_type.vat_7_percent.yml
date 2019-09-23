@@ -1,0 +1,26 @@
+uuid: 7dff26ae-4d9f-4cd6-9c2b-fb19f8ad28c4
+langcode: en
+status: true
+dependencies: {  }
+id: vat_7_percent
+label: 'VAT (7%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: e51034cd-a79c-4ad1-be22-ae224ca87f79
+      label: VAT
+      percentage: '0.07'
+  territories:
+    -
+      country_code: LR
+    -
+      country_code: PA
+    -
+      country_code: SG
+    -
+      country_code: TH
+      administrative_area: ''
+  display_inclusive: true

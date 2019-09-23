@@ -1,0 +1,11 @@
+uuid: f17ca28b-24dd-46da-a121-ff5d6aeb3a61
+langcode: en
+status: true
+dependencies: {  }
+id: hide_related_products_variation
+label: 'Hide Related Products Variation'
+code: ".block-hide .field--name-field-image {\r\n    display: none;\r\n}\r\n\r\n.block-hide .attribute-widgets {\r\n display: none;\r\n}\r\n\r\n.block-hide .field--name-price {\r\n    display: none;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

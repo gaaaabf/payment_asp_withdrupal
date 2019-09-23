@@ -1,0 +1,11 @@
+uuid: 8e3d5bbb-d7f7-47a7-896d-6caf20554921
+langcode: en
+status: true
+dependencies: {  }
+id: birthday_input_label
+label: 'Birthday Input Label'
+code: "div#edit-field-birthday-wrapper h4 {\r\n    color: black;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

@@ -1,0 +1,37 @@
+uuid: 38544c95-273b-4e17-b400-71a38c8b93eb
+langcode: en
+status: true
+dependencies: {  }
+id: vat_18_percent
+label: 'VAT (18%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 2ac23a98-b507-41f9-bd83-8cf9c369fc2e
+      label: VAT
+      percentage: '0.18'
+  territories:
+    -
+      country_code: AZ
+    -
+      country_code: DO
+    -
+      country_code: XK
+    -
+      country_code: MK
+    -
+      country_code: PE
+      administrative_area: ''
+    -
+      country_code: TZ
+    -
+      country_code: TG
+    -
+      country_code: TR
+      administrative_area: ''
+    -
+      country_code: UG
+  display_inclusive: true

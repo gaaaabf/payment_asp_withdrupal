@@ -1,0 +1,41 @@
+uuid: f6e54c95-bf7d-49bf-aad4-e01a8fec5e32
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.career_recruitment.body
+    - field.field.node.career_recruitment.field_application_deadline
+    - field.field.node.career_recruitment.field_available_
+    - field.field.node.career_recruitment.field_benefits
+    - field.field.node.career_recruitment.field_holidays
+    - field.field.node.career_recruitment.field_location
+    - field.field.node.career_recruitment.field_position
+    - field.field.node.career_recruitment.field_qualifications
+    - field.field.node.career_recruitment.field_responsibilities
+    - field.field.node.career_recruitment.field_salary
+    - field.field.node.career_recruitment.field_working_hours
+    - node.type.career_recruitment
+  module:
+    - user
+id: node.career_recruitment.teaser
+targetEntityType: node
+bundle: career_recruitment
+mode: teaser
+content: {  }
+hidden:
+  addtoany: true
+  body: true
+  field_application_deadline: true
+  field_available_: true
+  field_benefits: true
+  field_holidays: true
+  field_location: true
+  field_position: true
+  field_qualifications: true
+  field_responsibilities: true
+  field_salary: true
+  field_working_hours: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

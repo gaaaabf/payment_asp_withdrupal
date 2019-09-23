@@ -1,0 +1,22 @@
+uuid: 0a652703-a583-4403-80e2-8de967a17a83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.faq_customer_care
+  module:
+    - text
+id: node.faq_customer_care.body
+field_name: body
+entity_type: node
+bundle: faq_customer_care
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,13 @@
+uuid: 01e4f2ba-d610-4628-a03f-e5708be02361
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: pavF9ia7lWG77kcLG4Vqzwdz6EKAV7PhOzBhkPCDCZo
+id: commerce_bulk_variation_title
+label: 'Change title'
+type: commerce_product_variation
+plugin: commerce_bulk_variation_title
+configuration: {  }

@@ -1,0 +1,20 @@
+uuid: 0a1e3df9-9221-4642-8cdc-2f4b565238a1
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+id: checkout_auto_recalculate_shipping
+label: 'Checkout Auto recalculate Shipping'
+code: "jQuery(function ($) {\r\n\r\n\t$('select[name=\"shipping_information[shipping_profile][select_address]\"]').change(function(){\r\n\t  alert('YOU HAVE CHANGED');\r\n  \t$('input[value=\"Recalculate shipping\"]')[0].click();\r\n\t});\r\n\t\r\n});"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+conditions_require_all: true

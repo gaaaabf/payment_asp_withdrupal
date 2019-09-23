@@ -1,0 +1,20 @@
+uuid: b2ec03ae-6910-463d-9fe7-440f7d28a878
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_currency_resolver
+  theme:
+    - bootstrap_mint
+id: currencyblock
+theme: bootstrap_mint
+region: sidebar_first
+weight: -13
+provider: null
+plugin: commerce_currency_resolver
+settings:
+  id: commerce_currency_resolver
+  label: 'Currency Switcher'
+  provider: commerce_currency_resolver
+  label_display: '0'
+visibility: {  }

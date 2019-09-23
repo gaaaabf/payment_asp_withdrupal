@@ -1,0 +1,20 @@
+uuid: 0e4f00be-1206-476a-8c63-1a91ffbbbb97
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+id: node.user_points.uid
+field_name: uid
+entity_type: node
+bundle: user_points
+label: 投稿者
+description: コンテンツ投稿者のユーザー名。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

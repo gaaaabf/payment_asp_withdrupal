@@ -1,0 +1,23 @@
+uuid: 31a3e78e-5c00-4b0d-8089-28091731e4bb
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_5_5_percent
+label: 'US Sales Tax (5.5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: c311a8ed-b6b1-4a1d-82d6-9b6a67207859
+      label: 'Sales Tax'
+      percentage: '0.055'
+  territories:
+    -
+      country_code: US
+      administrative_area: NE
+    -
+      country_code: US
+      administrative_area: ME
+  display_inclusive: true

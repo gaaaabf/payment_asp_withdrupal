@@ -1,0 +1,29 @@
+uuid: 0a0d7e7b-7c55-44df-91e1-19839c7a852d
+langcode: en
+status: true
+dependencies: {  }
+id: canada_sales_tax_5_percent
+label: 'Canada Sales Tax (5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: a04813bb-7122-412f-a092-6ce3183f3cb0
+      label: 'Sales Tax'
+      percentage: '0.05'
+  territories:
+    -
+      country_code: CA
+      administrative_area: AB
+    -
+      country_code: CA
+      administrative_area: NT
+    -
+      country_code: CA
+      administrative_area: NU
+    -
+      country_code: CA
+      administrative_area: YT
+  display_inclusive: true

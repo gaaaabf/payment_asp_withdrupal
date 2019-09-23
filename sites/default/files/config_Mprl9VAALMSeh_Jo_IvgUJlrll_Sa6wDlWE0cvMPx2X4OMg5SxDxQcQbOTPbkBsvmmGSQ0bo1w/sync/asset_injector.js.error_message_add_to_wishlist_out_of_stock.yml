@@ -1,0 +1,14 @@
+uuid: 5cc69e6d-7f36-4683-a279-88d5aad8d3ca
+langcode: en
+status: false
+dependencies: {  }
+id: error_message_add_to_wishlist_out_of_stock
+label: 'Error Message add to wishlist out of stock'
+code: "jQuery(document).ready(function($) { \r\n\r\n  $(\".messages--error\").text(\"Sorry we only have 0 in stock and you cannot add product that is out of stock.\");\r\n});\r\n"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: false
+conditions: {  }
+conditions_require_all: true

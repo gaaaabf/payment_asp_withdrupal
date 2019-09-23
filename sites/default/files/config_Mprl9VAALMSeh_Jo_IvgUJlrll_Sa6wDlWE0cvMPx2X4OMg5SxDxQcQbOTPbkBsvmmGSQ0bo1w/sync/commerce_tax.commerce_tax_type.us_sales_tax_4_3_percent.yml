@@ -1,0 +1,20 @@
+uuid: 3ce8a521-bf9a-4a09-9170-866e7146e799
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_4_3_percent
+label: 'US Sales Tax (4.3%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 7c1f1351-889b-4ea1-8e5c-7c69d5755da7
+      label: 'Sales Tax'
+      percentage: '0.043'
+  territories:
+    -
+      country_code: US
+      administrative_area: VA
+  display_inclusive: true

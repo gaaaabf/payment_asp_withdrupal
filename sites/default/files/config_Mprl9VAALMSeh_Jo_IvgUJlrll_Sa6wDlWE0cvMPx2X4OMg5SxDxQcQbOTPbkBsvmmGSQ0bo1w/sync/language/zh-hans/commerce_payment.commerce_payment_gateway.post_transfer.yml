@@ -1,0 +1,6 @@
+label: 邮政转让
+configuration:
+  instructions:
+    value: "<p>请使用邮局提供的付款表格，并将其从邮局窗口或与付款表格对应的ATM转移到指定帐户。</p>\r\n\r\n<p>付款确认后，我们将立即发货。 我们会在订单确认电子邮件中向您发送您的银行帐户名称。 （转账手续费（约80-330日元）将由客户支付）</p>\r\n"
+    format: full_html
+  display_label: 邮政转让

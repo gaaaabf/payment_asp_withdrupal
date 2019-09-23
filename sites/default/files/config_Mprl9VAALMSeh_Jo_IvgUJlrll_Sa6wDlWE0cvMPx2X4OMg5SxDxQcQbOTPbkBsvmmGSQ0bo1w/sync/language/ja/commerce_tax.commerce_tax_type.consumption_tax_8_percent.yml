@@ -1,0 +1,5 @@
+label: '消费税 (8%)'
+configuration:
+  rates:
+    -
+      label: ''

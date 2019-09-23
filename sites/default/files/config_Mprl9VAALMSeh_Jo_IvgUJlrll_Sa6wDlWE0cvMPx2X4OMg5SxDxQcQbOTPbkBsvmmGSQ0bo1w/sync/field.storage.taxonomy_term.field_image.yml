@@ -1,0 +1,23 @@
+uuid: 9bcefca9-58f7-4adc-921f-5fc4763c7bef
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - taxonomy
+id: taxonomy_term.field_image
+field_name: field_image
+entity_type: taxonomy_term
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

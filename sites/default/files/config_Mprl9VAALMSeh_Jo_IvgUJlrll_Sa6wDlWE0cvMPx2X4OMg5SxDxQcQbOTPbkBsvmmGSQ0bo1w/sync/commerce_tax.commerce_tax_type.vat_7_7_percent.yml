@@ -1,0 +1,19 @@
+uuid: 1ac17998-d9fa-48b0-b3be-1291ccdfcc53
+langcode: en
+status: true
+dependencies: {  }
+id: vat_7_7_percent
+label: 'VAT (7.7%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: a67eb3f7-723c-49d0-a6c6-cd414bc68cf8
+      label: VAT
+      percentage: '0.077'
+  territories:
+    -
+      country_code: CH
+  display_inclusive: true

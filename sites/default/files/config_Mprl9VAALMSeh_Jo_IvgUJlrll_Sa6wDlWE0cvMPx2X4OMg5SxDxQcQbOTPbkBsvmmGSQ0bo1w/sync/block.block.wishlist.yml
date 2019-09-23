@@ -1,0 +1,20 @@
+uuid: 1398b9ec-1985-49e7-9f34-6d69757850fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_wishlist
+  theme:
+    - bootstrap_mint
+id: wishlist
+theme: bootstrap_mint
+region: sidebar_first
+weight: -12
+provider: null
+plugin: commerce_wishlist
+settings:
+  id: commerce_wishlist
+  label: Wishlist
+  provider: commerce_wishlist
+  label_display: visible
+visibility: {  }

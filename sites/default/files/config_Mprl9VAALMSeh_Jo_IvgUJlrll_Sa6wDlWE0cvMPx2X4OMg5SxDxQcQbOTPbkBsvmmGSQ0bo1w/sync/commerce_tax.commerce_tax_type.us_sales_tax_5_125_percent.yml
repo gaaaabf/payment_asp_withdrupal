@@ -1,0 +1,20 @@
+uuid: 8efd1fa7-071e-4d6f-a587-9ea7d0818161
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_5_125_percent
+label: 'US Sales Tax (5.125%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: de65463a-dd90-4ca9-8cb8-0615e5c4727a
+      label: 'Sales Tax'
+      percentage: '0.05125'
+  territories:
+    -
+      country_code: US
+      administrative_area: NM
+  display_inclusive: true

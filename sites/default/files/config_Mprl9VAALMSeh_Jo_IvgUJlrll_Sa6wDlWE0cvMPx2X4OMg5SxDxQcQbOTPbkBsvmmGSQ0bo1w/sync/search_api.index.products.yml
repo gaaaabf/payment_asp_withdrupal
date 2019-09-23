@@ -1,0 +1,302 @@
+uuid: 0ab334f8-897b-4db9-a4cf-1d0fa8fcda43
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.variations
+    - field.storage.commerce_product_variation.attribute_color
+    - field.storage.commerce_product_variation.attribute_size
+    - field.storage.commerce_product_variation.field_stock
+    - field.storage.commerce_product.field_reviews
+    - field.storage.commerce_product.field_category
+    - field.storage.commerce_product.field_images
+    - field.storage.commerce_product_variation.field_jan_code
+    - field.storage.commerce_product.field_new_
+    - field.storage.commerce_product.field_product_tags
+    - field.storage.commerce_product_variation.field_review_ratings
+    - search_api.server.search
+  module:
+    - commerce_product
+    - taxonomy
+    - search_api
+    - commerce_stock_local
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  attribute_color_1:
+    label: 'Variations » Product variation » Color'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:attribute_color'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.attribute_color
+      module:
+        - commerce_product
+  attribute_size_1:
+    label: 'Variations » Product variation » Size'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:attribute_size'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.attribute_size
+      module:
+        - commerce_product
+  available_stock:
+    label: 'Variations » Product variation » Stock » Available stock'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:field_stock:available_stock'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.field_stock
+      module:
+        - commerce_product
+  comment_count:
+    label: 'Reviews » Number of comments'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_reviews:comment_count'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_reviews
+  created:
+    label: Created
+    datasource_id: 'entity:commerce_product'
+    property_path: created
+    type: date
+    dependencies:
+      module:
+        - commerce_product
+  currency_code:
+    label: 'Variations » Product variation » Price » Currency code'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:currency_code'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+        - commerce_product
+  field_category:
+    label: Category
+    datasource_id: 'entity:commerce_product'
+    property_path: field_category
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_category
+  field_images:
+    label: Images
+    datasource_id: 'entity:commerce_product'
+    property_path: field_images
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_images
+  field_jan_code:
+    label: 'JAN Code'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: field_jan_code
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.field_jan_code
+  field_new_:
+    label: 'New Arrivals'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_new_
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_new_
+  field_product_tags:
+    label: 'Product Tags'
+    datasource_id: 'entity:commerce_product'
+    property_path: field_product_tags
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_tags
+  field_review_ratings_1:
+    label: 'Variations » Product variation » Review Ratings'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:field_review_ratings'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+        - field.storage.commerce_product_variation.field_review_ratings
+      module:
+        - commerce_product
+  field_reviews:
+    label: Reviews
+    datasource_id: 'entity:commerce_product'
+    property_path: field_reviews
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_reviews
+  name:
+    label: 'Category » Taxonomy term » Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_category:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_category
+      module:
+        - taxonomy
+        - taxonomy
+  number:
+    label: 'Variations » Product variation » Price » Number'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+        - commerce_product
+  sku:
+    label: SKU
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: sku
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+  sku_1:
+    label: 'Variations » Product variation » SKU'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:sku'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+        - commerce_product
+  status:
+    label: Published
+    datasource_id: 'entity:commerce_product'
+    property_path: status
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+  title:
+    label: 'Variations » Product variation » Title'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:title'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+      module:
+        - commerce_product
+        - commerce_product
+  title_1:
+    label: Title
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+  variations:
+    label: Variations
+    datasource_id: 'entity:commerce_product'
+    property_path: variations
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.variations
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:commerce_product_attribute_value':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:commerce_stock_location':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:taxonomy_term':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  entity_status: {  }
+  hierarchy:
+    fields:
+      field_category: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  html_filter:
+    all_fields: false
+    fields: {  }
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields:
+      - field_jan_code
+      - field_product_tags
+      - name
+      - sku_1
+      - title
+      - title_1
+      - variations
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: search

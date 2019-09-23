@@ -1,0 +1,19 @@
+uuid: 4a0a4e9f-7d5f-4639-a88e-888128854e4d
+langcode: en
+status: true
+dependencies: {  }
+id: vat_27_percent
+label: 'VAT (27%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 4c723df1-4560-45bc-b9e1-b4e92d401699
+      label: VAT
+      percentage: '0.27'
+  territories:
+    -
+      country_code: HU
+  display_inclusive: true

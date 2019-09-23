@@ -1,0 +1,9 @@
+uuid: f731b442-f5eb-40ba-acc7-ad11a407a1fb
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: CNY
+name: 'Chinese Yuan'
+numericCode: '156'
+symbol: CN¥
+fractionDigits: 2

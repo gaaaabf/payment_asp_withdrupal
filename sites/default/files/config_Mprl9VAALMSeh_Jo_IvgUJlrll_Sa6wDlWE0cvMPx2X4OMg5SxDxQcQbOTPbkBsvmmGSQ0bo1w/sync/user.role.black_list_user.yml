@@ -1,0 +1,9 @@
+uuid: 0d0f3af0-c9b6-4c7d-aa9c-8e9d3ee9d710
+langcode: en
+status: true
+dependencies: {  }
+id: black_list_user
+label: 'Black List user'
+weight: 5
+is_admin: null
+permissions: {  }

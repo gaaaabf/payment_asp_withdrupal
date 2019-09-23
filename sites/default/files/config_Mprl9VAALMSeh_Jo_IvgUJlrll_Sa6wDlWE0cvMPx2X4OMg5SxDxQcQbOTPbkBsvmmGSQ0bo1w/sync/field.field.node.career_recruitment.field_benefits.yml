@@ -1,0 +1,21 @@
+uuid: e13abbc8-c6c3-41dd-8ea5-58366abe0f24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_benefits
+    - node.type.career_recruitment
+  module:
+    - text
+id: node.career_recruitment.field_benefits
+field_name: field_benefits
+entity_type: node
+bundle: career_recruitment
+label: Benefits
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: 228d00b4-ee9d-45c5-b5e5-37ece317ef3b
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_2_9_percent
+label: 'US Sales Tax (2.9%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 91e2b4d2-7f03-43ba-a15b-055b1c8ae07c
+      label: 'Sales Tax'
+      percentage: '0.029'
+  territories:
+    -
+      country_code: US
+      administrative_area: CO
+  display_inclusive: true

@@ -1,0 +1,11 @@
+uuid: 52729595-4787-4e3d-b48b-dbe969ecdf55
+langcode: en
+status: true
+dependencies: {  }
+id: hide_cancel_button
+label: 'Hide ''Cancel'' button'
+code: ".commerce-order-item-add-to-cart-form a.button {\r\n    display: none;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

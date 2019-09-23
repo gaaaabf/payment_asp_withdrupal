@@ -1,0 +1,20 @@
+uuid: 90df2d3a-d4f4-47e8-a5e5-b016a196c663
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_4_225_
+label: 'US Sales Tax (4.225%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 5181ae25-3a0f-44bd-aa26-947ecc8260b8
+      label: 'Sales Tax'
+      percentage: '0.04225'
+  territories:
+    -
+      country_code: US
+      administrative_area: MO
+  display_inclusive: true

@@ -1,0 +1,18 @@
+uuid: 4e224df4-983c-4046-973c-b736e2188b1f
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+id: node.user_points.changed
+field_name: changed
+entity_type: node
+bundle: user_points
+label: 変更済
+description: ノードが最後に更新された日時。
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

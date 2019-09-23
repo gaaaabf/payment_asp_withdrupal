@@ -1,0 +1,29 @@
+uuid: 491ab433-63a3-48da-b77d-1d336a807f58
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_mint
+_core:
+  default_config_hash: mqqjbFgPGdkvULb-iMntFssFZ08SuDdzu42y7xLZXL8
+id: bootstrap_mint_local_tasks
+theme: bootstrap_mint
+region: content
+weight: -12
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: true
+    context_mapping: {  }

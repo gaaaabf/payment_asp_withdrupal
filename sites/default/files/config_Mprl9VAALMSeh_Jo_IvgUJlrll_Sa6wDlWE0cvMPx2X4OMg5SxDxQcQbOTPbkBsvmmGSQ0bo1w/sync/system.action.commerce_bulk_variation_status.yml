@@ -1,0 +1,13 @@
+uuid: 420271bc-e28c-4711-8c02-17a0a8bd101b
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_bulk
+_core:
+  default_config_hash: 3_xF62dvYwKjgmpwcUiYHsK_H6DIPOEkNAwyF7neux8
+id: commerce_bulk_variation_status
+label: 'Change status'
+type: commerce_product_variation
+plugin: commerce_bulk_variation_status
+configuration: {  }

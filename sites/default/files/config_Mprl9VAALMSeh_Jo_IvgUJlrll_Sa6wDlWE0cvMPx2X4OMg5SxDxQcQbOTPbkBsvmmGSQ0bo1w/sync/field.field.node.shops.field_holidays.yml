@@ -1,0 +1,21 @@
+uuid: 268567ed-70ba-4ae5-bae9-4d3fe2e2a415
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_holidays
+    - node.type.shops
+  module:
+    - text
+id: node.shops.field_holidays
+field_name: field_holidays
+entity_type: node
+bundle: shops
+label: Holidays
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

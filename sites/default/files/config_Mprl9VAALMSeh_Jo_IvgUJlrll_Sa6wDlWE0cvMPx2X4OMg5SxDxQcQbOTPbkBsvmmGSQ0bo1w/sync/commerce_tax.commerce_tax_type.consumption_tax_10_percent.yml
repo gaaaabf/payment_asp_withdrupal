@@ -1,0 +1,20 @@
+uuid: dc4dd8d4-b6f3-43a0-8f24-01c28a7731aa
+langcode: en
+status: false
+dependencies: {  }
+id: consumption_tax_10_percent
+label: 'Consumption Tax (10%)'
+plugin: custom
+configuration:
+  display_label: consumption_tax
+  round: true
+  rates:
+    -
+      id: 5ee18d52-d063-4dba-88d4-ed0c28348b21
+      label: 'Consumption Tax'
+      percentage: '0.1'
+  territories:
+    -
+      country_code: JP
+      administrative_area: ''
+  display_inclusive: true

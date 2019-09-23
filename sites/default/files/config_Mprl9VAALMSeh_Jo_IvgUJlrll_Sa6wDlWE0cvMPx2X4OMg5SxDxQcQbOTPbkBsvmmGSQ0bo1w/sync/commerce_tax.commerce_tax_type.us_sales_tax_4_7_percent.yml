@@ -1,0 +1,20 @@
+uuid: d8f5a1fa-8258-428f-9ccb-6024a8d8afdf
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_4_7_percent
+label: 'US Sales Tax (4.7%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 8601de09-c404-40bf-bbf3-4b187cbe7324
+      label: 'Sales Tax'
+      percentage: '0.047'
+  territories:
+    -
+      country_code: US
+      administrative_area: UT
+  display_inclusive: true

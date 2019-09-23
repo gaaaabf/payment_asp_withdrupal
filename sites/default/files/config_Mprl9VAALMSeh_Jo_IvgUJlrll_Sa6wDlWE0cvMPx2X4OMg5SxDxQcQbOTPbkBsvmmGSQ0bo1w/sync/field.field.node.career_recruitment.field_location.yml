@@ -1,0 +1,19 @@
+uuid: 29aad470-4e9d-4936-845f-7d2c0e29dd06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.career_recruitment
+id: node.career_recruitment.field_location
+field_name: field_location
+entity_type: node
+bundle: career_recruitment
+label: Location
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

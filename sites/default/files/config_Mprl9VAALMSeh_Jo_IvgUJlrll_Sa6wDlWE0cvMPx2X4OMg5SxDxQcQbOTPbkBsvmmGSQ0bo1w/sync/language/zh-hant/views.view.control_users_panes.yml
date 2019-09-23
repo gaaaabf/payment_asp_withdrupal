@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 套用
+          reset_button_label: 重設
+          exposed_sorts_label: 排序依據
+          sort_asc_label: 遞增
+          sort_desc_label: 遞減
+      fields:
+        name:
+          separator: ', '
+        created:
+          label: 已建立
+          separator: ', '
+        edit_user:
+          text: 編輯
+  pane_tc_new_users:
+    display_options:
+      block_category: 儀表板

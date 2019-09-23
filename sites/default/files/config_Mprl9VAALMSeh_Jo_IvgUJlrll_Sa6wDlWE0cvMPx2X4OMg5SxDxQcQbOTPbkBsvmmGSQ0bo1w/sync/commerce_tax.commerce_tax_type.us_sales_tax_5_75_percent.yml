@@ -1,0 +1,20 @@
+uuid: 8be3e83e-9062-4da0-ac28-987acc0fd010
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_5_75_percent
+label: 'US Sales Tax (5.75%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: d1a595c6-0a4e-4706-95ae-cf73ba5ff499
+      label: 'Sales Tax'
+      percentage: '0.0575'
+  territories:
+    -
+      country_code: US
+      administrative_area: OH
+  display_inclusive: true

@@ -1,0 +1,21 @@
+uuid: ce2419f4-282f-41b3-98b8-fa4a7e862fb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_holidays
+    - node.type.career_recruitment
+  module:
+    - text
+id: node.career_recruitment.field_holidays
+field_name: field_holidays
+entity_type: node
+bundle: career_recruitment
+label: Holidays
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

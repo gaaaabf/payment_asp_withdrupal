@@ -1,0 +1,20 @@
+uuid: c7b5ee17-f68b-4e2a-a1c0-3528d715b2d0
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+  module:
+    - path
+id: node.user_points.path
+field_name: path
+entity_type: node
+bundle: user_points
+label: URLエイリアス
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

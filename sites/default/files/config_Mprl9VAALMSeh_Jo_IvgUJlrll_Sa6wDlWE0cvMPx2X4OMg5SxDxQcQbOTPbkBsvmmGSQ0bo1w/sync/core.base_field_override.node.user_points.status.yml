@@ -1,0 +1,22 @@
+uuid: 3e3ebaca-76b0-4803-a613-5f0e8582ad93
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+id: node.user_points.status
+field_name: status
+entity_type: node
+bundle: user_points
+label: 掲載
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

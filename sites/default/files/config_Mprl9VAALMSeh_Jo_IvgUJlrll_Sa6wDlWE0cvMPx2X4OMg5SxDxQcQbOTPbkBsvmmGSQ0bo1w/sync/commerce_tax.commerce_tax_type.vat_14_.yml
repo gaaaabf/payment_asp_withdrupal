@@ -1,0 +1,26 @@
+uuid: 98c64e9c-0700-44eb-b2c6-c955ebd85826
+langcode: en
+status: true
+dependencies: {  }
+id: vat_14_
+label: 'VAT (14%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: df059862-c5cc-4440-a743-c303dd742999
+      label: VAT
+      percentage: '0.14'
+  territories:
+    -
+      country_code: DZ
+    -
+      country_code: EG
+      administrative_area: ''
+    -
+      country_code: GN
+    -
+      country_code: GY
+  display_inclusive: true

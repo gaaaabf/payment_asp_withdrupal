@@ -1,0 +1,29 @@
+uuid: c5fa203c-3673-4a0b-b228-d0756df721cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_search
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_mint
+id: exposedformproduct_searchpage_1
+theme: bootstrap_mint
+region: content_top
+weight: -15
+provider: null
+plugin: 'views_exposed_filter_block:product_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:product_search-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: /products
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,18 @@
+uuid: b60f59b1-7f99-486f-8698-97e9b52ab84a
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_amazon_lpa
+id: amazonpay
+label: 'Amazon Pay'
+weight: null
+plugin: amazon_pay
+configuration:
+  display_label: 'Amazon Pay'
+  mode: live
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

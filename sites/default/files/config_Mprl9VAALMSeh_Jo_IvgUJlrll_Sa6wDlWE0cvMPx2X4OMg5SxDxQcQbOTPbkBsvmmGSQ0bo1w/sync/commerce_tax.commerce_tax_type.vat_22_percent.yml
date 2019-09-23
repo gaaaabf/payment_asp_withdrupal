@@ -1,0 +1,23 @@
+uuid: 8bda56cf-3c2a-4777-a64a-15171d731721
+langcode: en
+status: true
+dependencies: {  }
+id: vat_22_percent
+label: 'VAT (22%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 02fb3c2f-aefb-4789-902c-4429feaaae66
+      label: VAT
+      percentage: '0.22'
+  territories:
+    -
+      country_code: IT
+      administrative_area: ''
+    -
+      country_code: UY
+      administrative_area: ''
+  display_inclusive: true

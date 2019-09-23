@@ -1,0 +1,23 @@
+uuid: 3c43b0e0-17d2-48d2-b9fa-afc624c17667
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.packaging_gift_setting
+  module:
+    - text
+id: taxonomy_term.packaging_gift_setting.default
+targetEntityType: taxonomy_term
+bundle: packaging_gift_setting
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

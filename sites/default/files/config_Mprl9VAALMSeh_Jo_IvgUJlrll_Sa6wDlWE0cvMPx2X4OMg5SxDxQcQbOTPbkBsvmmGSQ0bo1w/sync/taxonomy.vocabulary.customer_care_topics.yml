@@ -1,0 +1,8 @@
+uuid: e8f06b22-d4a6-40be-b42a-f83a7037d371
+langcode: en
+status: true
+dependencies: {  }
+name: 'Customer Care Topics'
+vid: customer_care_topics
+description: ''
+weight: 0

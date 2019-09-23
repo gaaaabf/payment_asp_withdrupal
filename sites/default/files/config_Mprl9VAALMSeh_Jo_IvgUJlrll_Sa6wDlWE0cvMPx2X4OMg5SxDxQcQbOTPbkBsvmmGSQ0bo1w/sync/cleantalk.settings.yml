@@ -1,0 +1,15 @@
+cleantalk_authkey: y3ezada9y7a4
+cleantalk_check_comments: 1
+cleantalk_check_comments_automod: 0
+cleantalk_check_comments_min_approved: 3
+cleantalk_check_register: 1
+cleantalk_check_webforms: 1
+cleantalk_check_contact_forms: 1
+cleantalk_check_forum_topics: 1
+cleantalk_check_search_form: 1
+cleantalk_search_noindex: 0
+cleantalk_check_ccf: 0
+cleantalk_sfw: 1
+cleantalk_link: 0
+_core:
+  default_config_hash: M5W-ByIpSYSzrwdFonD3zlOJ94iegFeJMcTqCiSu0Nw

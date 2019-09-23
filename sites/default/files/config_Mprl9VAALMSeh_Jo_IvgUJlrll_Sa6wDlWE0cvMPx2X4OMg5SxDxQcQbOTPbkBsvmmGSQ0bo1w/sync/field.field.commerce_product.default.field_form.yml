@@ -1,0 +1,32 @@
+uuid: fbdf5bec-80f1-4c66-940f-0aac0655d48f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_form
+    - webform.webform.inquiry_form
+  module:
+    - webform
+id: commerce_product.default.field_form
+field_name: field_form
+entity_type: commerce_product
+bundle: default
+label: Form
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: dc5c4b4b-9b86-42eb-941b-050f50bc0a22
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

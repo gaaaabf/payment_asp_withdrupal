@@ -1,0 +1,23 @@
+uuid: 6b5da89a-d776-4bac-bf17-b22de6ffd67c
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.size
+  module:
+    - facets
+  theme:
+    - bootstrap_mint
+id: size
+theme: bootstrap_mint
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'facet_block:size'
+settings:
+  id: 'facet_block:size'
+  label: Size
+  provider: facets
+  label_display: visible
+  block_id: size
+visibility: {  }

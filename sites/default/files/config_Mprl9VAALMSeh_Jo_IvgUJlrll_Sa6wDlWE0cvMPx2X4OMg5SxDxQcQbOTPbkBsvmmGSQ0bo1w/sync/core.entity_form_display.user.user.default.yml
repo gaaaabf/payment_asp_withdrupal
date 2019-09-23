@@ -1,0 +1,96 @@
+uuid: 1979c72a-ef4d-4b7e-aaa2-9a03b6465249
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_birthday
+    - field.field.user.user.field_first_name
+    - field.field.user.user.field_gender
+    - field.field.user.user.field_last_name
+    - field.field.user.user.field_store
+    - field.field.user.user.field_telephone
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - telephone
+    - user
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_birthday:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_first_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_gender:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_last_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_store:
+    weight: 8
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_telephone:
+    weight: 5
+    settings:
+      placeholder: '(XXX) XXX-XXXX'
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  translation:
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  commerce_remote_id: true
+  contact: true
+  customer_profiles: true
+  langcode: true
+  language: true
+  path: true
+  timezone: true

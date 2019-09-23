@@ -1,0 +1,6 @@
+label: 郵政轉讓
+configuration:
+  instructions:
+    value: "<p>請使用郵局提供的付款表格，並將其從郵局窗口或與付款表格對應的ATM轉移到指定帳戶。</p>\r\n\r\n<p>付款確認後，我們將立即發貨。 我們會在訂單確認電子郵件中向您發送您的銀行帳戶名稱。 （轉賬手續費（約80-330日元）將由客戶支付）</p>\r\n"
+    format: full_html
+  display_label: 郵政轉讓

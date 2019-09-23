@@ -1,0 +1,19 @@
+uuid: 2ce461f1-7164-4d33-89a3-3f5250262ea2
+langcode: en
+status: true
+dependencies: {  }
+id: vat_16_
+label: 'VAT (16.5%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: cefaad87-0381-4358-abc6-b7826ce0376e
+      label: VAT
+      percentage: '0.165'
+  territories:
+    -
+      country_code: MW
+  display_inclusive: true

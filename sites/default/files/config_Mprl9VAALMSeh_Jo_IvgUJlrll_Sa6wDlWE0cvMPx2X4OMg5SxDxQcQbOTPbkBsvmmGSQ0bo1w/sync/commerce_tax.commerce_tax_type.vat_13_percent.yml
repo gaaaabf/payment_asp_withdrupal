@@ -1,0 +1,27 @@
+uuid: d9d779b8-5a02-4bfd-b3a6-df54f81ed797
+langcode: en
+status: true
+dependencies: {  }
+id: vat_13_percent
+label: 'VAT (13%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 291a6b42-ea16-4961-9386-d96145822f3e
+      label: VAT
+      percentage: '0.13'
+  territories:
+    -
+      country_code: CN
+      administrative_area: ''
+    -
+      country_code: BO
+    -
+      country_code: CA
+      administrative_area: 'ON'
+    -
+      country_code: CR
+  display_inclusive: true

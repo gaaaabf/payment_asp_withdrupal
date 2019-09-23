@@ -1,0 +1,33 @@
+uuid: 733299d2-ca46-40e4-a50e-b71262365f8e
+langcode: en
+status: true
+dependencies: {  }
+id: vat_21_percent
+label: 'VAT (21%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: f8efd9c9-dd3f-49e7-9015-9380f8b715fb
+      label: VAT
+      percentage: '0.21'
+  territories:
+    -
+      country_code: AR
+      administrative_area: ''
+    -
+      country_code: BE
+    -
+      country_code: CZ
+    -
+      country_code: LV
+    -
+      country_code: LT
+    -
+      country_code: ME
+    -
+      country_code: ES
+      administrative_area: ''
+  display_inclusive: true

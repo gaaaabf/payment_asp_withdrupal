@@ -1,0 +1,20 @@
+uuid: 9305638a-1701-421a-8b97-3e94b61e6adc
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_4_6_percent
+label: 'US Sales Tax (4.6%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 81e8c0cf-5378-4bbe-ac20-4bec47d47098
+      label: 'Sales Tax'
+      percentage: '0.046'
+  territories:
+    -
+      country_code: US
+      administrative_area: NV
+  display_inclusive: true

@@ -1,0 +1,25 @@
+uuid: fe21bec8-90cb-4143-a727-5e5ad0b47ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_earned_points
+    - node.type.user_points
+_core:
+  default_config_hash: NpkoposdpCdQ5qYLEQnFZ0yE-pf-lFRDwEXzMKjadr0
+id: node.user_points.field_earned_points
+field_name: field_earned_points
+entity_type: node
+bundle: user_points
+label: 'Earned Points'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

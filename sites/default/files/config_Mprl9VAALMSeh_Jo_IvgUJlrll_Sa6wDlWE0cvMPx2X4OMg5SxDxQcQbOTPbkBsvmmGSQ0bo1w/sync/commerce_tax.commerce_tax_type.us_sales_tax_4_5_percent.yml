@@ -1,0 +1,23 @@
+uuid: a7755daa-080c-4242-9ac0-d3dcee81112e
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_4_5_percent
+label: 'US Sales Tax (4.5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: e94db674-67b1-42f3-8f2c-9135a7d1f045
+      label: 'Sales Tax'
+      percentage: '0.045'
+  territories:
+    -
+      country_code: US
+      administrative_area: SD
+    -
+      country_code: US
+      administrative_area: OK
+  display_inclusive: true

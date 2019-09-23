@@ -1,0 +1,14 @@
+uuid: 0143874e-0e35-45fb-927e-76359943f4a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.black_list_user
+  module:
+    - user
+id: user_remove_role_action.black_list_user
+label: 'Remove the Black List user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: black_list_user

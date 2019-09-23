@@ -1,0 +1,20 @@
+uuid: 5cad99fa-a237-4265-97fc-fda64fa40d97
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_wishlist_api
+    - serialization
+    - user
+_core:
+  default_config_hash: 6MqSIewzZnE2b7q15-OXTMufAG21k2WOsjrWKCtvOWw
+id: commerce_wishlist_update_item
+plugin_id: commerce_wishlist_update_item
+granularity: resource
+configuration:
+  methods:
+    - PATCH
+  formats:
+    - json
+  authentication:
+    - cookie

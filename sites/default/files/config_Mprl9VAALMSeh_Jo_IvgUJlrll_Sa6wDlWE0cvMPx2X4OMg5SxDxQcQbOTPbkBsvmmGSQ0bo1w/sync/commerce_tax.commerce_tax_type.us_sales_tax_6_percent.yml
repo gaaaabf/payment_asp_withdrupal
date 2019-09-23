@@ -1,0 +1,47 @@
+uuid: d87e075a-0895-4ce0-8107-ddab659b5e14
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_6_percent
+label: 'US Sales Tax (6%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 16730e05-e929-400d-a9b2-48236b4987ae
+      label: 'Sales Tax'
+      percentage: '0.06'
+  territories:
+    -
+      country_code: US
+      administrative_area: WV
+    -
+      country_code: US
+      administrative_area: VT
+    -
+      country_code: US
+      administrative_area: SC
+    -
+      country_code: US
+      administrative_area: PA
+    -
+      country_code: US
+      administrative_area: MI
+    -
+      country_code: US
+      administrative_area: MD
+    -
+      country_code: US
+      administrative_area: KY
+    -
+      country_code: US
+      administrative_area: IA
+    -
+      country_code: US
+      administrative_area: ID
+    -
+      country_code: US
+      administrative_area: FL
+  display_inclusive: true

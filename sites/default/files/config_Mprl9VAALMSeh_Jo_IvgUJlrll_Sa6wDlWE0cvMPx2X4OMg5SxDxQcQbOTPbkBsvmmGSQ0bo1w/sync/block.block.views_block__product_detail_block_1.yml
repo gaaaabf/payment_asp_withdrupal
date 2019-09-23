@@ -1,0 +1,39 @@
+uuid: 3671e1b6-ef02-423d-b4f5-57ce2b79fb56
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_detail
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - bootstrap_mint
+id: views_block__product_detail_block_1
+theme: bootstrap_mint
+region: content
+weight: -8
+provider: null
+plugin: 'views_block:product_detail-block_1'
+settings:
+  id: 'views_block:product_detail-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:commerce_product':
+    id: 'entity_bundle:commerce_product'
+    bundles:
+      default: default
+    negate: false
+    context_mapping:
+      commerce_product: '@commerce_product.product_route_context:commerce_product'
+  request_path:
+    id: request_path
+    pages: '/product/*'
+    negate: false
+    context_mapping: {  }

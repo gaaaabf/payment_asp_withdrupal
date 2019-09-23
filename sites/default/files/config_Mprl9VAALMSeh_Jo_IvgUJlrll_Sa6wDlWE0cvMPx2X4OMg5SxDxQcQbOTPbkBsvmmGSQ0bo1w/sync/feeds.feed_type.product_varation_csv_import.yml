@@ -1,0 +1,89 @@
+uuid: 1d62d7d3-0c63-4ba7-aa08-07cf01a8b162
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.field.commerce_product_variation.default.attribute_color
+    - field.field.commerce_product_variation.default.attribute_size
+    - field.field.commerce_product_variation.default.field_jan_code
+  module:
+    - commerce_product
+label: 'Product Varation CSV Import'
+id: product_varation_csv_import
+description: ''
+import_period: -1
+fetcher: upload
+fetcher_configuration:
+  allowed_extensions: csv
+  directory: 'private://feeds'
+parser: csv
+parser_configuration:
+  delimiter: ','
+  no_headers: false
+  line_limit: 100
+processor: 'entity:commerce_product_variation'
+processor_configuration:
+  update_existing: 2
+  update_non_existent: _keep
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+  authorize: true
+  skip_hash_check: false
+  values:
+    type: default
+custom_sources:
+  title:
+    label: Title
+    value: Title
+    machine_name: title
+  sku:
+    label: SKU
+    value: SKU
+    machine_name: sku
+  jan_code:
+    label: 'JAN Code'
+    value: 'JAN Code'
+    machine_name: jan_code
+  size:
+    label: Size
+    value: Size
+    machine_name: size
+  color:
+    label: Color
+    value: Color
+    machine_name: color
+mappings:
+  -
+    target: title
+    map:
+      value: title
+    unique:
+      value: '1'
+  -
+    target: sku
+    map:
+      value: sku
+    unique:
+      value: '1'
+  -
+    target: field_jan_code
+    map:
+      value: jan_code
+    unique:
+      value: '1'
+  -
+    target: attribute_size
+    map:
+      target_id: size
+    settings:
+      reference_by: name
+      autocreate: false
+  -
+    target: attribute_color
+    map:
+      target_id: color
+    settings:
+      reference_by: name
+      autocreate: false

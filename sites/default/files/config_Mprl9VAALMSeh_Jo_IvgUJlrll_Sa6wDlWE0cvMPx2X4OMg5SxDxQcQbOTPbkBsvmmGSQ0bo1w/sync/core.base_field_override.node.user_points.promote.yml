@@ -1,0 +1,22 @@
+uuid: 56b2c5c9-b122-4a9a-ad2b-b0694142e20b
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+id: node.user_points.promote
+field_name: promote
+entity_type: node
+bundle: user_points
+label: フロントページへ掲載
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: オン
+  off_label: オフ
+field_type: boolean

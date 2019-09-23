@@ -1,0 +1,27 @@
+uuid: 95cb7f19-a1c6-439b-ad8d-b5cdc2db8823
+langcode: en
+status: true
+dependencies: {  }
+id: bank_deposit
+label: 'Bank Deposit'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: ''
+    format: plain_text
+  display_label: 'Bank Deposit'
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions:
+  -
+    plugin: order_billing_address
+    configuration:
+      zone:
+        territories:
+          -
+            country_code: JP
+            administrative_area: ''
+conditionOperator: OR

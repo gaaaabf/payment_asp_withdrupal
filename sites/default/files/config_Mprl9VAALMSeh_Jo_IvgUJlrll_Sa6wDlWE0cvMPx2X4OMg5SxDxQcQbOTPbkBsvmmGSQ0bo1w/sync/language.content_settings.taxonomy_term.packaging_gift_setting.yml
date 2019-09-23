@@ -1,0 +1,18 @@
+uuid: 2056adbe-dd0f-4b59-b66a-42c7ce8bcd79
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.packaging_gift_setting
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.packaging_gift_setting
+target_entity_type_id: taxonomy_term
+target_bundle: packaging_gift_setting
+default_langcode: site_default
+language_alterable: false

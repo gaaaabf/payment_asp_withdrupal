@@ -1,0 +1,30 @@
+uuid: 4034a768-e810-43a9-89a9-c855d83a7b5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.google_analytics_summary
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_mint
+id: views_block__google_analytics_summary_block_1
+theme: bootstrap_mint
+region: content
+weight: -15
+provider: null
+plugin: 'views_block:google_analytics_summary-block_1'
+settings:
+  id: 'views_block:google_analytics_summary-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /dashboard
+    negate: false
+    context_mapping: {  }

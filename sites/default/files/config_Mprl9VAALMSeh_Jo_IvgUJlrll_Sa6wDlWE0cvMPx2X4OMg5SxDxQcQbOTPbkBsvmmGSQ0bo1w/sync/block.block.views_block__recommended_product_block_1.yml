@@ -1,0 +1,30 @@
+uuid: 19e5e773-10dc-4c74-88cd-aa407663a2e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.recommended_product
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap_mint
+id: views_block__recommended_product_block_1
+theme: bootstrap_mint
+region: content
+weight: -9
+provider: null
+plugin: 'views_block:recommended_product-block_1'
+settings:
+  id: 'views_block:recommended_product-block_1'
+  label: 'Recommended Products'
+  provider: views
+  label_display: visible
+  views_label: 'Recommended Products'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

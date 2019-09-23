@@ -1,0 +1,24 @@
+uuid: afa9fb2d-7c05-4f45-a4c0-82d88eaa388f
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+id: my_page_
+label: 'My Page '
+description: ''
+use_admin_theme: false
+path: /mypage
+access_logic: and
+access_conditions:
+  -
+    id: user_role
+    roles:
+      administrator: administrator
+      administrator_multty: administrator_multty
+      shop_staff: shop_staff
+      member: member
+    negate: false
+    context_mapping:
+      user: current_user
+parameters: {  }

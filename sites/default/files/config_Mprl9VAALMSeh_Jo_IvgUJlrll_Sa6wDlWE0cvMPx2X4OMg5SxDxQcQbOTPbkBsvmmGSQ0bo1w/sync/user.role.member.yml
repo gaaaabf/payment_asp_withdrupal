@@ -1,0 +1,13 @@
+uuid: 94c2d755-d3c7-499e-a446-16e2934e1ca4
+langcode: en
+status: true
+dependencies: {  }
+id: member
+label: Member
+weight: 6
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'change own username'
+  - 'use text format basic_html'
+  - 'view own profile'

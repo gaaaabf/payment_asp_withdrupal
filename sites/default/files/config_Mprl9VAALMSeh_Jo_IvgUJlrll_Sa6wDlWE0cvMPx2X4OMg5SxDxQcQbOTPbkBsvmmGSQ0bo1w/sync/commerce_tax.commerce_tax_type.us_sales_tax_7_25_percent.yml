@@ -1,0 +1,20 @@
+uuid: 06df99bb-da9f-485d-8100-290b1c02882c
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_7_25_percent
+label: 'US Sales Tax (7.25%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 97ddb3ec-852e-4b69-8f52-0bf5cbbc3a0d
+      label: 'Sales Tax'
+      percentage: '0.0725'
+  territories:
+    -
+      country_code: US
+      administrative_area: CA
+  display_inclusive: true

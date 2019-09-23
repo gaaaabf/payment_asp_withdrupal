@@ -1,0 +1,27 @@
+uuid: 1eddde7b-1009-4985-a821-bd4eeb73df76
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+    - system
+  theme:
+    - bootstrap_mint
+id: cart
+theme: bootstrap_mint
+region: sidebar_first
+weight: -14
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: Cart
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: false
+visibility:
+  request_path:
+    id: request_path
+    pages: /cart
+    negate: true
+    context_mapping: {  }

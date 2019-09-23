@@ -1,0 +1,20 @@
+uuid: af631c96-9808-41b0-927b-ff0f764fb023
+langcode: en
+status: false
+dependencies: {  }
+id: consumption_tax_8_percent
+label: 'Consumption Tax (8%)'
+plugin: custom
+configuration:
+  display_label: consumption_tax
+  round: true
+  rates:
+    -
+      id: bf737f37-fa21-4c16-91c5-f12f4ddc943a
+      label: 'Consumption Tax'
+      percentage: '0.08'
+  territories:
+    -
+      country_code: JP
+      administrative_area: ''
+  display_inclusive: false

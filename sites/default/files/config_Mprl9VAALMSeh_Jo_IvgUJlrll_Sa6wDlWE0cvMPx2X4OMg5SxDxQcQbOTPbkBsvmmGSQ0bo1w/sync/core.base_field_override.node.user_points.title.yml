@@ -1,0 +1,18 @@
+uuid: 2c53d75b-c03d-4b51-a5c1-cd722122979c
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+id: node.user_points.title
+field_name: title
+entity_type: node
+bundle: user_points
+label: タイトル
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

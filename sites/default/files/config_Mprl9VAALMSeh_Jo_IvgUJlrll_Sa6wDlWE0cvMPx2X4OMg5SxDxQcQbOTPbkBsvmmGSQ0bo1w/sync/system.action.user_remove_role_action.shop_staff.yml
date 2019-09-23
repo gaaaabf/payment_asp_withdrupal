@@ -1,0 +1,14 @@
+uuid: 94a1f146-7ff8-47ec-b5ba-d8634da021b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.shop_staff
+  module:
+    - user
+id: user_remove_role_action.shop_staff
+label: 'Remove the Shop staff role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: shop_staff

@@ -1,0 +1,23 @@
+uuid: 066b3f2b-4b3a-4dbd-a340-54d046c4f54b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_new_
+id: commerce_product.default.field_new_
+field_name: field_new_
+entity_type: commerce_product
+bundle: default
+label: 'New Arrivals'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

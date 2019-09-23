@@ -1,0 +1,31 @@
+uuid: fddbfe66-c8a2-43ed-9ed6-ec6b33550342
+langcode: en
+status: true
+dependencies: {  }
+id: vat_19_percent
+label: 'VAT (19%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 2c45d66a-33d0-485c-900e-38866e2c2082
+      label: VAT
+      percentage: '0.19'
+  territories:
+    -
+      country_code: CL
+      administrative_area: ''
+    -
+      country_code: CO
+      administrative_area: ''
+    -
+      country_code: CY
+    -
+      country_code: DE
+    -
+      country_code: RO
+    -
+      country_code: TN
+  display_inclusive: true

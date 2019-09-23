@@ -1,0 +1,114 @@
+uuid: c9db4e0c-85b7-4b03-8ed2-455dc569d152
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.faq_customer_care.body
+    - field.field.node.faq_customer_care.field_faq
+    - field.field.node.faq_customer_care.field_topic
+    - node.type.faq_customer_care
+  module:
+    - faqfield
+    - path
+    - select2
+    - text
+id: node.faq_customer_care.default
+targetEntityType: node
+bundle: faq_customer_care
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_faq:
+    weight: 11
+    settings:
+      answer_widget: text_format
+      question_title: Question
+      answer_title: Answer
+      advanced:
+        question_length: 255
+        question_size: 100
+        question_rows: 0
+        answer_rows: 5
+    third_party_settings: {  }
+    type: faqfield_default
+    region: content
+  field_topic:
+    weight: 10
+    settings:
+      width: 100%
+      autocomplete: true
+      match_operator: STARTS_WITH
+    third_party_settings: {  }
+    type: select2_entity_reference
+    region: content
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 6
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

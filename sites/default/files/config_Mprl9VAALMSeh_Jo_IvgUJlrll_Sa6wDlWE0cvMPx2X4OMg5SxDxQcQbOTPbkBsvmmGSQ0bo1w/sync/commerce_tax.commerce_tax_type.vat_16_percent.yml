@@ -1,0 +1,26 @@
+uuid: 4f33102d-8524-4afa-8eea-ba85822d4bd6
+langcode: en
+status: true
+dependencies: {  }
+id: vat_16_percent
+label: 'VAT (16%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 671921b9-6428-4fc7-8583-b98a63d35e1f
+      label: VAT
+      percentage: '0.16'
+  territories:
+    -
+      country_code: JO
+    -
+      country_code: KE
+    -
+      country_code: MX
+      administrative_area: ''
+    -
+      country_code: ZM
+  display_inclusive: true

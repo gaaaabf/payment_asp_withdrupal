@@ -1,0 +1,35 @@
+uuid: 989d1d90-8d91-44b6-aa13-2639cc25287d
+langcode: en
+status: true
+dependencies:
+  module:
+    - hierarchical_taxonomy_menu
+  theme:
+    - bootstrap_mint
+id: hierarchicaltaxonomymenu
+theme: bootstrap_mint
+region: content
+weight: -14
+provider: null
+plugin: hierarchical_taxonomy_menu
+settings:
+  id: hierarchical_taxonomy_menu
+  label: Categories
+  provider: hierarchical_taxonomy_menu
+  label_display: visible
+  vocabulary: product_categories|
+  max_depth: 10
+  dynamic_block_title: false
+  collapsible: true
+  stay_open: true
+  interactive_parent: false
+  hide_block: false
+  use_image_style: false
+  image_height: 16
+  image_width: 16
+  image_style: large
+  max_age: '0'
+  base_term: ''
+  dynamic_base_term: false
+  show_count: false
+visibility: {  }

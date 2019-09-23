@@ -1,0 +1,39 @@
+uuid: 3bbedd84-f6b2-4e4d-a418-8f27967972dc
+langcode: en
+status: true
+dependencies: {  }
+id: vat_12_percent
+label: 'VAT (12%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 05c60ce7-1419-435b-bde8-d94235303264
+      label: VAT
+      percentage: '0.12'
+  territories:
+    -
+      country_code: BS
+      administrative_area: ''
+    -
+      country_code: EC
+    -
+      country_code: GH
+    -
+      country_code: KZ
+    -
+      country_code: KG
+    -
+      country_code: PH
+      administrative_area: ''
+    -
+      country_code: SE
+    -
+      country_code: VE
+      administrative_area: ''
+    -
+      country_code: IN
+      administrative_area: ''
+  display_inclusive: true

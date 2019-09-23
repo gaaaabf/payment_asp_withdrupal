@@ -1,0 +1,18 @@
+uuid: 55ed79ca-0de2-4c83-b30b-58fc36cb6064
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.review
+id: comment.review.changed
+field_name: changed
+entity_type: comment
+bundle: review
+label: Changed
+description: 'The time that the comment was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

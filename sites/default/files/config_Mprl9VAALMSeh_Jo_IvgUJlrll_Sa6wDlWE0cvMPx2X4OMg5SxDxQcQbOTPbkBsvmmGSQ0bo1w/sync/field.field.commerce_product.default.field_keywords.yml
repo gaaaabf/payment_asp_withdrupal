@@ -1,0 +1,29 @@
+uuid: d7581b24-df61-42a7-a480-f0b6c56f4885
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_keywords
+    - taxonomy.vocabulary.keywords
+id: commerce_product.default.field_keywords
+field_name: field_keywords
+entity_type: commerce_product
+bundle: default
+label: Keywords
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      keywords: keywords
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

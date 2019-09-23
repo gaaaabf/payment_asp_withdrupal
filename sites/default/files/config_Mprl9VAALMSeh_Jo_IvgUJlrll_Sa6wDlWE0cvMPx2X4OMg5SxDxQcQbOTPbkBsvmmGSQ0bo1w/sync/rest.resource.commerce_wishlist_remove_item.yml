@@ -1,0 +1,20 @@
+uuid: ab75afca-37c7-4014-838d-f698a9af36d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_wishlist_api
+    - serialization
+    - user
+_core:
+  default_config_hash: gyMyOrdCBXwKXvHnXG4SpG_aAdY7szzFz-tjMB3ifcg
+id: commerce_wishlist_remove_item
+plugin_id: commerce_wishlist_remove_item
+granularity: resource
+configuration:
+  methods:
+    - DELETE
+  formats:
+    - json
+  authentication:
+    - cookie

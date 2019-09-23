@@ -1,0 +1,21 @@
+uuid: 6d7896f8-8914-4331-a3a4-179d889aa58c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_wishlist.commerce_wishlist_type.wishlist_type
+    - field.storage.commerce_wishlist.wishlist_items
+id: commerce_wishlist.wishlist_type.wishlist_items
+field_name: wishlist_items
+entity_type: commerce_wishlist
+bundle: wishlist_type
+label: 'Wishlist items'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_wishlist_item'
+  handler_settings: {  }
+field_type: entity_reference

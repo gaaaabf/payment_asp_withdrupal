@@ -1,0 +1,23 @@
+uuid: ad2337a5-e82a-4b09-abc4-85dccb8133cd
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.ratings
+  module:
+    - facets
+  theme:
+    - bootstrap_mint
+id: ratings
+theme: bootstrap_mint
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'facet_block:ratings'
+settings:
+  id: 'facet_block:ratings'
+  label: Ratings
+  provider: facets
+  label_display: visible
+  block_id: ratings
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 153211fa-109b-49b2-8970-6dff6475ba66
+langcode: en
+status: true
+dependencies: {  }
+id: vat_9_5_percent
+label: 'VAT (9.5%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: e0c70f4f-9716-48e4-beb2-e5a0826274fc
+      label: VAT
+      percentage: '0.095'
+  territories:
+    -
+      country_code: SI
+  display_inclusive: true

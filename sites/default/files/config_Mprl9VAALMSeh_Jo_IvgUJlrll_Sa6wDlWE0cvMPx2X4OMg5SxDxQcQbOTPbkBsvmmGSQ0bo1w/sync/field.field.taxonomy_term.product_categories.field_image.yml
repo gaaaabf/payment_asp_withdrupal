@@ -1,0 +1,27 @@
+uuid: c88e702d-631c-42bf-9308-6084512c271d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_image
+    - taxonomy.vocabulary.product_categories
+  module:
+    - file
+id: taxonomy_term.product_categories.field_image
+field_name: field_image
+entity_type: taxonomy_term
+bundle: product_categories
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

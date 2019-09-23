@@ -1,0 +1,14 @@
+uuid: 2d1acefc-ea67-4376-8b52-f96bd26a4ea5
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.black_list_user
+  module:
+    - user
+id: user_add_role_action.black_list_user
+label: 'Add the Black List user role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: black_list_user

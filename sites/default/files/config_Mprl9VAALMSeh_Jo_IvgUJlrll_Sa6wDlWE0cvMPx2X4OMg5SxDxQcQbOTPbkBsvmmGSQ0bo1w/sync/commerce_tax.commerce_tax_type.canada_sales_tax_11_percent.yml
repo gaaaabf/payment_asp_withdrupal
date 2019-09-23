@@ -1,0 +1,20 @@
+uuid: 86428a93-b1fe-43e2-8c5f-e572fc26617e
+langcode: en
+status: true
+dependencies: {  }
+id: canada_sales_tax_11_percent
+label: 'Canada Sales Tax (11%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 05cdc5ca-60cc-4315-9b61-f0a546ad7faf
+      label: 'Sales Tax'
+      percentage: '0.11'
+  territories:
+    -
+      country_code: CA
+      administrative_area: SK
+  display_inclusive: true

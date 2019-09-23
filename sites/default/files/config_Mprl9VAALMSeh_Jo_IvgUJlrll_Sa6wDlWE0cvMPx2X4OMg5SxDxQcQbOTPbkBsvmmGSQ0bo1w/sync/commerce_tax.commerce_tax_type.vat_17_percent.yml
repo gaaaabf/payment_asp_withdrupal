@@ -1,0 +1,23 @@
+uuid: 4ddbd493-6af1-4621-a1c4-de56aac5eb3c
+langcode: en
+status: true
+dependencies: {  }
+id: vat_17_percent
+label: 'VAT (17%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 5484e675-65cd-45ec-9690-a98259a37918
+      label: VAT
+      percentage: '0.17'
+  territories:
+    -
+      country_code: BA
+    -
+      country_code: IL
+    -
+      country_code: PK
+  display_inclusive: true

@@ -1,0 +1,23 @@
+uuid: 4f8706a9-24f6-4645-8c15-495b2bd5104f
+langcode: en
+status: true
+dependencies: {  }
+id: vat_25_percent
+label: 'VAT (25%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: e74032f7-96b8-4386-874b-b7a5c2a166ad
+      label: VAT
+      percentage: '0.25'
+  territories:
+    -
+      country_code: HR
+    -
+      country_code: DK
+    -
+      country_code: 'NO'
+  display_inclusive: true

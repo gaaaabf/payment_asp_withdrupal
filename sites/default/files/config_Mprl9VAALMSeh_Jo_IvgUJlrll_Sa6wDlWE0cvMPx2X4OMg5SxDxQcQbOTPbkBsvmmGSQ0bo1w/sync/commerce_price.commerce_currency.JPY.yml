@@ -1,0 +1,9 @@
+uuid: e70e724a-211b-4072-ab37-7322edf607b8
+langcode: en
+status: true
+dependencies: {  }
+currencyCode: JPY
+name: 'Japanese Yen'
+numericCode: '392'
+symbol: ¥
+fractionDigits: 0

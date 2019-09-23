@@ -1,0 +1,32 @@
+uuid: 39c9b1d4-966f-43df-91a1-3a3ba9ff1e50
+langcode: en
+status: true
+dependencies: {  }
+id: sales_vat_4_percent
+label: 'US Sales Tax (4%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: ba6f1e71-2c83-432c-9e77-42d54ad0db31
+      label: 'Sales Tax'
+      percentage: '0.04'
+  territories:
+    -
+      country_code: US
+      administrative_area: AL
+    -
+      country_code: US
+      administrative_area: GA
+    -
+      country_code: US
+      administrative_area: HI
+    -
+      country_code: US
+      administrative_area: NY
+    -
+      country_code: US
+      administrative_area: WY
+  display_inclusive: true

@@ -1,0 +1,20 @@
+uuid: 79217199-fe87-4f0b-8a2a-e2714e58e3f6
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_6_625_percent
+label: 'US Sales Tax (6.625%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: d088d480-20e5-45e1-aa57-90f474b5090e
+      label: 'Sales Tax'
+      percentage: '0.06625'
+  territories:
+    -
+      country_code: US
+      administrative_area: NJ
+  display_inclusive: true

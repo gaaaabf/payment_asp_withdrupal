@@ -1,0 +1,20 @@
+uuid: 68d264de-220b-4c65-818b-69faf3c3b054
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+id: star_rating
+label: 'Star Rating'
+code: "jQuery(document).ready(function($) { \r\n  var star_rating_width = $('#star').with();\r\n  $('.fill-ratings').css(\"width\", star_rating_width);\r\n});"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/product/*'
+    negate: false
+conditions_require_all: true

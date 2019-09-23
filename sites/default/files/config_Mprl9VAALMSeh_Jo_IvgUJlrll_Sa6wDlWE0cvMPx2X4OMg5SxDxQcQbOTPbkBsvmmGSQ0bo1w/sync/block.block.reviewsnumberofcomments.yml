@@ -1,0 +1,23 @@
+uuid: fbef0ab0-9cb1-4d2b-a098-5cc02904c427
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.reviews_number_of_comments
+  module:
+    - facets
+  theme:
+    - bootstrap_mint
+id: reviewsnumberofcomments
+theme: bootstrap_mint
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:reviews_number_of_comments'
+settings:
+  id: 'facet_block:reviews_number_of_comments'
+  label: Reviews
+  provider: facets
+  label_display: visible
+  block_id: reviewsnumberofcomments
+visibility: {  }

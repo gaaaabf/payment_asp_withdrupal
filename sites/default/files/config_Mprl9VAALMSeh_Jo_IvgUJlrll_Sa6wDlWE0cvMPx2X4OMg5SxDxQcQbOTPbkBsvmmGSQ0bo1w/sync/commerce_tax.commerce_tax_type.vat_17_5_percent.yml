@@ -1,0 +1,19 @@
+uuid: f177e021-c4c9-421b-8164-b3b06b8b1a2d
+langcode: en
+status: true
+dependencies: {  }
+id: vat_17_5_percent
+label: 'VAT (17.5%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: 234160cc-5e5a-4619-a00f-e9692aca72ed
+      label: VAT
+      percentage: '0.175'
+  territories:
+    -
+      country_code: BB
+  display_inclusive: true

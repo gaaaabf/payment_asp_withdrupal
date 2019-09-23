@@ -1,0 +1,5 @@
+label: '消費税 (8%)'
+configuration:
+  rates:
+    -
+      label: 消費税

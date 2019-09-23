@@ -1,0 +1,15 @@
+mode: live
+operation_mode: pay_lwa
+role_access: ''
+use_popup: false
+authorization_mode: sync
+capture_mode: shipment_capture
+auth_statement: ''
+simulation_mode: _none
+buttons:
+  pay:
+    size: medium
+    style: Gold
+  login:
+    size: medium
+    style: Gold

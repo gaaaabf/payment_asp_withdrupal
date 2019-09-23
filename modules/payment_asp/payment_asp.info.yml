@@ -1,0 +1,4 @@
+name : 'Payment APS'
+description : 'Module that supports multi payment APIS on commerce checkout'
+core: 8.x
+type: module

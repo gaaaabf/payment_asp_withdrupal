@@ -1,0 +1,14 @@
+uuid: c6236670-b08d-4514-920f-abf8f3931a0f
+langcode: en
+status: true
+dependencies: {  }
+id: inquiry_form
+label: 'Inquiry Form'
+code: "jQuery(document).ready(function($) { \r\n  $(\"a[href='#form']\").click(function(){\r\n     $(\".webform-ajax-form-wrapper\").css( \"display\", \"block\" );\r\n     $(\".field--name-field-reviews\").css( \"display\", \"none\" );\r\n  }); \r\n  $(\"a[href='#review']\").click(function(){\r\n     $(\".field--name-field-reviews\").css( \"display\", \"block\" );\r\n     $(\".webform-ajax-form-wrapper\").css( \"display\", \"none\" );\r\n  }); \r\n});"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions: {  }
+conditions_require_all: true

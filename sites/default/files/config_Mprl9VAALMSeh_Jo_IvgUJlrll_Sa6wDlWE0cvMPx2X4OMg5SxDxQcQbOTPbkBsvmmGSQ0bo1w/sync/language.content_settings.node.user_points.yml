@@ -1,0 +1,18 @@
+uuid: fecd4d34-f5e5-466f-a988-fef6c53f2b08
+langcode: ja
+status: true
+dependencies:
+  config:
+    - node.type.user_points
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.user_points
+target_entity_type_id: node
+target_bundle: user_points
+default_langcode: site_default
+language_alterable: false

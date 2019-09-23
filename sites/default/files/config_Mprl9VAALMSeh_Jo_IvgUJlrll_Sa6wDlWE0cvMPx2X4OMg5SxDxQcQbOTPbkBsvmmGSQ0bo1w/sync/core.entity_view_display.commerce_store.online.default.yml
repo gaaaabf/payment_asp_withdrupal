@@ -1,0 +1,78 @@
+uuid: 52f7acf9-aa54-4550-b6ed-962129caeac7
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+    - field.field.commerce_store.online.field_about_store
+    - field.field.commerce_store.online.field_add
+    - field.field.commerce_store.online.field_link
+    - field.field.commerce_store.online.field_store_telephone
+  module:
+    - address
+    - link
+    - telephone
+    - text
+_core:
+  default_config_hash: fUxrlZt5z8U8dKAADqGtH0YQWZSVXIkH9Ga5abq8HwU
+id: commerce_store.online.default
+targetEntityType: commerce_store
+bundle: online
+mode: default
+content:
+  field_about_store:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_add:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_link:
+    weight: 5
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_store_telephone:
+    weight: 2
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+  mail:
+    type: basic_string
+    weight: 1
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  address: true
+  billing_countries: true
+  default_currency: true
+  langcode: true
+  prices_include_tax: true
+  tax_registrations: true

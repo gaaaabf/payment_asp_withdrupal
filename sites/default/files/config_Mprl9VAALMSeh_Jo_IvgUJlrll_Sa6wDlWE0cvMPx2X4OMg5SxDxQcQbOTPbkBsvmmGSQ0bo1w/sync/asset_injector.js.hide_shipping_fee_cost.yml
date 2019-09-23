@@ -1,0 +1,20 @@
+uuid: 52c8912e-d905-4aa6-b646-3a16ae2349d4
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+id: hide_shipping_fee_cost
+label: 'Hide Shipping Fee Cost'
+code: "console.log('Hiding of fee');\r\n\r\ndocument.querySelectorAll('input[value=\"Recalculate shipping\"]').onclick = function() {\r\n  alert('CLICKED');\r\n  console.log('Hiding of fesse');\r\n};"
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+conditions_require_all: true

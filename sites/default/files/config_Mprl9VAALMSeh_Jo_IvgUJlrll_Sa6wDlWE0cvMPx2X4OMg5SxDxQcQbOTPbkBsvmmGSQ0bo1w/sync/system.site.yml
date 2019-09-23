@@ -1,0 +1,15 @@
+uuid: ad32e283-0b07-4982-afd8-9f9488f3bfef
+name: Multty
+mail: multtystaff@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/4
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+mail_notification: ''

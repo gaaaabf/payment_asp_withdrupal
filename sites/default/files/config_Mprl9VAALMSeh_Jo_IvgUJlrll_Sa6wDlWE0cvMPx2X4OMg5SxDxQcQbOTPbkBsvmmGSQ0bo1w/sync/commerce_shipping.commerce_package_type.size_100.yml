@@ -1,0 +1,14 @@
+uuid: aca84a1e-0e78-42dc-a790-ae0e6dbb2596
+langcode: en
+status: true
+dependencies: {  }
+id: size_100
+label: 'Size 100'
+dimensions:
+  length: '30'
+  width: '40'
+  height: '30'
+  unit: cm
+weight:
+  number: '10'
+  unit: kg

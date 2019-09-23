@@ -1,0 +1,20 @@
+uuid: 1de6b7e3-ccce-41f0-94df-da401666a574
+langcode: en
+status: true
+dependencies: {  }
+id: canada_sales_tax_14_975_percent
+label: 'Canada Sales Tax (14.975%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 0c262efa-5809-4515-ad15-228b4e09be0a
+      label: 'Sales Tax'
+      percentage: '0.14975'
+  territories:
+    -
+      country_code: CA
+      administrative_area: QC
+  display_inclusive: true

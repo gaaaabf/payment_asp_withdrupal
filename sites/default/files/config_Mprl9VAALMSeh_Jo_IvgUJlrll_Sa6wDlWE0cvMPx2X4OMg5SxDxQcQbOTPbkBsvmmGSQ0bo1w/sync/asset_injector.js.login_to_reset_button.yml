@@ -1,0 +1,20 @@
+uuid: 6622902a-f865-4046-9a04-1a791e66bfa8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: login_to_reset_button
+label: 'Login to Reset button'
+code: "/* Reset password button from 'Login' to 'Reset' */\r\njQuery(document).ready(function($) {\r\n      $(\"#edit-actions input\").val(\"Reset\");\r\n   });\r\n   "
+noscript: ''
+noscriptRegion: {  }
+jquery: true
+header: true
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/user/reset/*'
+    negate: false
+conditions_require_all: true

@@ -1,0 +1,11 @@
+uuid: 982a5153-6aa8-45fc-9aad-c9d3c42fabd7
+langcode: en
+status: true
+dependencies: {  }
+id: hide_inquiry_form
+label: 'Hide Inquiry Form'
+code: ".webform-ajax-form-wrapper {\r\n  display:none;\r\n}\r\n.field--name-field-reviews {\r\n    display: none;\r\n}\r\n\r\na[href=\"#form\"] {\r\n    background: #1abc9c;\r\n    padding: 10px 15px;\r\n    color: white;\r\n}\r\na[href=\"#review\"] {\r\n    background: #1abc9c;\r\n    padding: 10px 15px;\r\n    color: white;\r\n}\r\nli.comment-reply {\r\n    display: none!important;\r\n}\r\nli.comment-delete {\r\n    display: none!important;\r\n}\r\n.field.field--name-field-inquiry.field--type-link.field--label-hidden.field__item {\r\n    margin-top: 20px;\r\n    margin-bottom:20px;\r\n}"
+media: all
+preprocess: true
+conditions: {  }
+conditions_require_all: true

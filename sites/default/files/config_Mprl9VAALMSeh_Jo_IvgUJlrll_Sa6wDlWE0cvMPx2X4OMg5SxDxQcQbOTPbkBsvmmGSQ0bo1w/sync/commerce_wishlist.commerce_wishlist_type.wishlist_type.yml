@@ -1,0 +1,10 @@
+uuid: 2a8fe7da-c81d-42d4-a61c-854d47866141
+langcode: en
+status: true
+dependencies: {  }
+label: 'Wishlist Type'
+id: wishlist_type
+allowAnonymous: false
+allowMultiple: true
+allowPublic: true
+wishlistFormView: commerce_wishlist_form

@@ -1,0 +1,25 @@
+uuid: 87c5655a-6477-4b2a-bf1e-4b32fb14b253
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_order
+    - field_permissions
+    - viewfield
+    - views
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: commerce_order.field_payment_view
+field_name: field_payment_view
+entity_type: commerce_order
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,26 @@
+uuid: 8cae481b-c011-4bdc-8cb4-07578f280ed8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_points_acquisition_date
+    - node.type.user_points
+  module:
+    - datetime
+_core:
+  default_config_hash: oWIBjzb6ttSgse52RKXkmMrFpNVm3kSldIyS31ie0Yc
+id: node.user_points.field_points_acquisition_date
+field_name: field_points_acquisition_date
+entity_type: node
+bundle: user_points
+label: 'Points Acquisition Date'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

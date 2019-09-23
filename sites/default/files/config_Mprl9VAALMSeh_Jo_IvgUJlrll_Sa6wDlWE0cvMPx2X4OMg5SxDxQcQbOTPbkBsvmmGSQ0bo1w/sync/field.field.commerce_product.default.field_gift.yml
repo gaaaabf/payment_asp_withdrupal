@@ -1,0 +1,29 @@
+uuid: fdabe6d0-2b4e-4f86-a187-094ff0b6cc86
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product.field_gift
+    - taxonomy.vocabulary.packaging_gift_setting
+id: commerce_product.default.field_gift
+field_name: field_gift
+entity_type: commerce_product
+bundle: default
+label: Gift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      packaging_gift_setting: packaging_gift_setting
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

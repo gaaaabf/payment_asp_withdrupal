@@ -1,0 +1,17 @@
+uuid: b9321b8c-7b39-4723-8427-1f3252ef5f04
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_currency_resolver
+title: 'Default cron handler'
+id: commerce_currency_resolver_cron
+weight: 0
+module: commerce_currency_resolver
+callback: commerce_currency_resolver_cron
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

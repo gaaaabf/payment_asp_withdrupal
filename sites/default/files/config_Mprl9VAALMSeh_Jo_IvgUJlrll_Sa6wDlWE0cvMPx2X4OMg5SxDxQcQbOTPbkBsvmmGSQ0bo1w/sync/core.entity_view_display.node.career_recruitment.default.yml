@@ -1,0 +1,136 @@
+uuid: ee86ea3f-dd01-4df9-8a55-f480439dd8c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.career_recruitment.body
+    - field.field.node.career_recruitment.field_application_deadline
+    - field.field.node.career_recruitment.field_available_
+    - field.field.node.career_recruitment.field_benefits
+    - field.field.node.career_recruitment.field_holidays
+    - field.field.node.career_recruitment.field_location
+    - field.field.node.career_recruitment.field_position
+    - field.field.node.career_recruitment.field_qualifications
+    - field.field.node.career_recruitment.field_responsibilities
+    - field.field.node.career_recruitment.field_salary
+    - field.field.node.career_recruitment.field_working_hours
+    - node.type.career_recruitment
+  module:
+    - datetime
+    - office_hours
+    - text
+    - user
+id: node.career_recruitment.default
+targetEntityType: node
+bundle: career_recruitment
+mode: default
+content:
+  body:
+    label: inline
+    type: text_default
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_application_deadline:
+    weight: 10
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: long
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_available_:
+    weight: 0
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_benefits:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_holidays:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_location:
+    weight: 2
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_position:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_qualifications:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_responsibilities:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_salary:
+    weight: 3
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_working_hours:
+    weight: 4
+    label: above
+    settings:
+      show_closed: open
+      office_hours_first_day: ''
+      day_format: long
+      time_format: G
+      closed_format: Closed
+      separator:
+        days: '<br />'
+        grouped_days: ' - '
+        day_hours: ': '
+        hours_hours: '-'
+        more_hours: ', '
+      current_status:
+        position: ''
+        open_text: 'Currently open!'
+        closed_text: 'Currently closed'
+      compress: false
+      grouped: false
+      schema:
+        enabled: 0
+      timezone_field: ''
+    third_party_settings: {  }
+    type: office_hours
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

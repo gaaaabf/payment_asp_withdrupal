@@ -1,0 +1,39 @@
+uuid: e67bbf7d-5fd6-4da3-9a44-d5b172ef90d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_wishlist.commerce_wishlist_type.wishlist_type
+    - field.field.commerce_wishlist.wishlist_type.wishlist_items
+  module:
+    - inline_entity_form
+id: commerce_wishlist.wishlist_type.default
+targetEntityType: commerce_wishlist
+bundle: wishlist_type
+mode: default
+content:
+  shipping_profile:
+    type: options_select
+    weight: 0
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  wishlist_items:
+    type: inline_entity_form_complex
+    weight: 0
+    settings:
+      override_labels: true
+      label_singular: 'wishlist item'
+      label_plural: 'wishlist items'
+      form_mode: default
+      collapsible: false
+      collapsed: false
+      allow_new: true
+      allow_existing: false
+      match_operator: CONTAINS
+      allow_duplicate: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  name: true
+  uid: true

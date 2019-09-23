@@ -1,0 +1,22 @@
+uuid: 78e084a7-ef47-4e16-8846-977b10fdccb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.career_recruitment
+  module:
+    - text
+id: node.career_recruitment.body
+field_name: body
+entity_type: node
+bundle: career_recruitment
+label: 'Other Details'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

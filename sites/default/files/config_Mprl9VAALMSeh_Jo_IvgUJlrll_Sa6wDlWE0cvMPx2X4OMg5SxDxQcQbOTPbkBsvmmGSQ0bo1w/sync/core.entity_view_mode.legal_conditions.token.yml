@@ -1,0 +1,10 @@
+uuid: 1baa7287-65cb-4d8b-ac01-0e90532f6252
+langcode: en
+status: true
+dependencies:
+  module:
+    - legal
+id: legal_conditions.token
+label: Token
+targetEntityType: legal_conditions
+cache: true

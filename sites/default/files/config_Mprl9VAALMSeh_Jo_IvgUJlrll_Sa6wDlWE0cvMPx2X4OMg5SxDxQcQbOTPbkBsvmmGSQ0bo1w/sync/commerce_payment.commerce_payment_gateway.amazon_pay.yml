@@ -1,0 +1,23 @@
+uuid: 11033ae9-fdb9-42b7-b4a2-68d5e84de6dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_amazon_lpa
+_core:
+  default_config_hash: 1rw-kSSAsGVxm3U73Ua40g-Q9pEy0vXnwRZHpQrO1n4
+id: amazon_pay
+label: 'Amazon Pay'
+weight: null
+plugin: amazon_pay
+configuration:
+  display_label: 'Amazon Pay'
+  mode: '0'
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions:
+  -
+    plugin: amazon_order
+    configuration: {  }
+conditionOperator: AND

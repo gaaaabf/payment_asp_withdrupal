@@ -1,0 +1,14 @@
+uuid: 7a40f708-b1ea-4c8b-b1c4-c85f9711309a
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.shop_staff
+  module:
+    - user
+id: user_add_role_action.shop_staff
+label: 'Add the Shop staff role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: shop_staff

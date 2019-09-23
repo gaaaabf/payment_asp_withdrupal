@@ -1,0 +1,42 @@
+uuid: 6dd65607-d50c-4d30-8419-5e81d82248ca
+langcode: en
+status: true
+dependencies: {  }
+id: vat_10_percent
+label: 'VAT (10%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: f68c8756-a21f-4793-898c-80d53f122f20
+      label: VAT
+      percentage: '0.1'
+  territories:
+    -
+      country_code: AF
+    -
+      country_code: AO
+    -
+      country_code: AU
+      administrative_area: ''
+    -
+      country_code: DJ
+    -
+      country_code: ID
+      administrative_area: ''
+    -
+      country_code: PY
+    -
+      country_code: KR
+      administrative_area: ''
+    -
+      country_code: SS
+    -
+      country_code: SR
+      administrative_area: ''
+    -
+      country_code: VN
+      administrative_area: ''
+  display_inclusive: true

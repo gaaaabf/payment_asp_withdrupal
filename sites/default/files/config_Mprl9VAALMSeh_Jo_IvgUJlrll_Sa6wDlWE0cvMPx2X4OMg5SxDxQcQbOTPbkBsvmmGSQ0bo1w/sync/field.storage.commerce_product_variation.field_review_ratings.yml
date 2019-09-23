@@ -1,0 +1,23 @@
+uuid: b545da39-3414-4752-b50c-25a1628311d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - field_permissions
+    - starrating
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: commerce_product_variation.field_review_ratings
+field_name: field_review_ratings
+entity_type: commerce_product_variation
+type: starrating
+settings: {  }
+module: starrating
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

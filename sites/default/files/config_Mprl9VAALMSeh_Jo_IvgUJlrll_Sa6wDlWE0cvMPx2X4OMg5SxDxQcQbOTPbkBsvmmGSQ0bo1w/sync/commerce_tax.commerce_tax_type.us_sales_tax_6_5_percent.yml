@@ -1,0 +1,26 @@
+uuid: bc50f0f7-e6ea-49e2-b37a-4c7eab5b1f3a
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_6_5_percent
+label: 'US Sales Tax (6.5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 98630cca-58da-48fa-9d47-e65e82241025
+      label: 'Sales Tax'
+      percentage: '0.065'
+  territories:
+    -
+      country_code: US
+      administrative_area: WA
+    -
+      country_code: US
+      administrative_area: KS
+    -
+      country_code: US
+      administrative_area: AR
+  display_inclusive: true

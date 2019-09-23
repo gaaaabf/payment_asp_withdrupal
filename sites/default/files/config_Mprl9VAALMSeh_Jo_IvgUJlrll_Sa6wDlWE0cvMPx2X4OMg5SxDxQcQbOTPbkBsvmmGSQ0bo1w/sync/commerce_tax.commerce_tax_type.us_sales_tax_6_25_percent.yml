@@ -1,0 +1,26 @@
+uuid: 909d9e2b-d5aa-4c0c-aaf0-80a86ec238a6
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_6_25_percent
+label: 'US Sales Tax (6.25%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: 4f2a3c21-91b0-4dd4-9447-69b181ddd565
+      label: 'Sales Tax'
+      percentage: '0.0625'
+  territories:
+    -
+      country_code: US
+      administrative_area: TX
+    -
+      country_code: US
+      administrative_area: MA
+    -
+      country_code: US
+      administrative_area: IL
+  display_inclusive: true

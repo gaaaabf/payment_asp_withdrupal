@@ -1,0 +1,19 @@
+uuid: 1ddd466b-2c81-48e6-ae60-88bddcc73df2
+langcode: en
+status: true
+dependencies: {  }
+id: vat_11_percent
+label: 'VAT (11%)'
+plugin: custom
+configuration:
+  display_label: vat
+  round: true
+  rates:
+    -
+      id: c444b549-8130-4685-b621-3f8747cc486e
+      label: VAT
+      percentage: '0.11'
+  territories:
+    -
+      country_code: LB
+  display_inclusive: true

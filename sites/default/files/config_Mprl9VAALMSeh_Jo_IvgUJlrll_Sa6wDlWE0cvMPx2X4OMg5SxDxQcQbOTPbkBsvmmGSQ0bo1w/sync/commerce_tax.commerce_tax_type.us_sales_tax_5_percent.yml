@@ -1,0 +1,23 @@
+uuid: 4dd6753d-6b79-4c01-8455-1d810fe305e9
+langcode: en
+status: true
+dependencies: {  }
+id: us_sales_tax_5_percent
+label: 'US Sales Tax (5%)'
+plugin: custom
+configuration:
+  display_label: tax
+  round: true
+  rates:
+    -
+      id: f0fb151f-6bb8-4841-ae6b-e2e6ef205eab
+      label: 'Sales Tax'
+      percentage: '0.05'
+  territories:
+    -
+      country_code: US
+      administrative_area: WI
+    -
+      country_code: US
+      administrative_area: ND
+  display_inclusive: true

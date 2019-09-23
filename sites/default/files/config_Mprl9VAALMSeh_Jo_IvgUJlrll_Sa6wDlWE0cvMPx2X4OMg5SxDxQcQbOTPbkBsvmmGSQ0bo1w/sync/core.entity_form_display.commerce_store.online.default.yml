@@ -1,0 +1,119 @@
+uuid: a1dd267b-19db-4784-a4b9-0542ae52711c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_store.commerce_store_type.online
+    - field.field.commerce_store.online.field_about_store
+    - field.field.commerce_store.online.field_add
+    - field.field.commerce_store.online.field_link
+    - field.field.commerce_store.online.field_store_telephone
+  module:
+    - address
+    - link
+    - path
+    - select2
+    - telephone
+    - text
+_core:
+  default_config_hash: jgswLhX3dBTurXMCMB2xRcubXL1S2-b3jqQhgbxfUvk
+id: commerce_store.online.default
+targetEntityType: commerce_store
+bundle: online
+mode: default
+content:
+  billing_countries:
+    type: select2
+    weight: 9
+    region: content
+    settings:
+      width: 100%
+    third_party_settings: {  }
+  default_currency:
+    type: select2_entity_reference
+    weight: 7
+    region: content
+    settings:
+      width: 100%
+      autocomplete: true
+      match_operator: STARTS_WITH
+    third_party_settings: {  }
+  field_about_store:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_add:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_store_telephone:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  langcode:
+    type: language_select
+    weight: 0
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  mail:
+    type: email_default
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  prices_include_tax:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  tax_registrations:
+    type: select2
+    weight: 10
+    region: content
+    settings:
+      width: 100%
+    third_party_settings: {  }
+  translation:
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  address: true

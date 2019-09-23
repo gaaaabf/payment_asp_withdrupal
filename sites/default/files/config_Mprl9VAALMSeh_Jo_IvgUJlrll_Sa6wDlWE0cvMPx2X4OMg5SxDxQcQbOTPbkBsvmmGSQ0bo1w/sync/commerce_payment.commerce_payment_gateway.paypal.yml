@@ -1,0 +1,23 @@
+uuid: fca78008-084a-4092-96fc-c608c910e288
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_paypal
+id: paypal
+label: 'PayPal Express Checkout'
+weight: null
+plugin: paypal_express_checkout
+configuration:
+  api_username: multtystaff-facilitator_api1.gmail.com
+  api_password: QT99LHHBUVG7VW8C
+  shipping_prompt: shipping_skip
+  signature: AvbrjyLw8e2V9PGT974X6JmrYVo9AE8NFnH-Uo.C0qc09LWLaGFZw4uP
+  solution_type: Mark
+  display_label: 'PayPal Express Checkout'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

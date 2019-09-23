@@ -1,0 +1,8 @@
+uuid: 94392ea5-8f76-4054-b2d7-37a7e140d427
+langcode: en
+status: true
+dependencies: {  }
+name: 'Packaging / Gift setting'
+vid: packaging_gift_setting
+description: ''
+weight: 0
