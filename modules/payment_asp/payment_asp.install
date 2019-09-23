@@ -13,17 +13,16 @@ function payment_asp_schema() {
     'description' => 'Track where a file is used.',
     'fields' => array(
       'payment_method_id' => array(
-        'description' => 'File ID.',
+        'description' => 'ID.',
         'type' => 'int',
         'unsigned' => TRUE,
         'not null' => TRUE,
       ),
       'fk_user_id' => array(
-        'description' => 'The name of the module that is using the file.',
-        'type' => 'varchar_ascii',
-        'length' => DRUPAL_EXTENSION_NAME_MAX_LENGTH,
+        'description' => 'User foreign key',
+        'type' => 'int',
+        'unsigned' => TRUE,
         'not null' => TRUE,
-        'default' => '',
       ),
       'type' => array(
         'description' => 'The name of the object type in which the file is used.',
@@ -32,23 +31,17 @@ function payment_asp_schema() {
         'not null' => TRUE,
         'default' => '',
       ),
-      'id' => array(
-        'description' => 'The primary key of the object using the file.',
-        'type' => 'varchar_ascii',
-        'length' => 64,
-        'not null' => TRUE,
-        'default' => 0,
-      ),
-      'count' => array(
-        'description' => 'The number of times this file is used by this object.',
-        'type' => 'int',
-        'unsigned' => TRUE,
-        'not null' => TRUE,
-        'default' => 0,
+    ),
+    'primary key' => array(
+      'payment_method_id', 
+    ),
+    'indexes' => array(
+      'fk_user_id' => array(
+        'fk_user_id',
       ),
     ),
     'foreign keys' => array(
-      'node_author' => array(
+      'fk_user_id' => array(
         'table' => 'users',
         'columns' => array('uid' => 'uid'),
       ),
