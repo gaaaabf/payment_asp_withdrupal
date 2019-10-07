@@ -17,10 +17,10 @@ use Drupal\Core\Url;
 /**
  * Implements hook_commerce_checkout_pane_info_alter().
  */
-function commerce_payment_commerce_checkout_pane_info_alter(&$definitions) {
-  // The payment_information pane replaces the billing_information one.
-  unset($definitions['billing_information']);
-}
+// function commerce_payment_commerce_checkout_pane_info_alter(&$definitions) {
+//   // The payment_information pane replaces the billing_information one.
+//   unset($definitions['billing_information']);
+// }
 
 /**
  * Implements hook_entity_base_field_info().

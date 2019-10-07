@@ -595,6 +595,7 @@ if ($settings['hash_salt']) {
  */
 # ini_set('pcre.backtrack_limit', 200000);
 # ini_set('pcre.recursion_limit', 200000);
+ini_set('memory_limit', '-1');
 
 /**
  * Active configuration settings.

@@ -9,7 +9,7 @@
  * Implements hook_schema().
  */
 function payment_asp_schema() {
-  $schema['payment_aps_payment_method'] = array(
+  $schema['payment_asp_payment_method'] = array(
     'description' => 'Track where a file is used.',
     'fields' => array(
       'payment_method_id' => array(
@@ -54,5 +54,21 @@ function payment_asp_schema() {
  * Implements hook_install().
  */
 function payment_asp_install() {
-
+  $values = array(
+    // A unique ID for the block instance.
+    'id' => 'paymentasp_checkout_block',
+    // The plugin block id as defined in the class.
+    'plugin' => 'PaymentASP Checkout Block',
+    // The machine name of the theme region.
+    'region' => 'content',
+    'settings' => array(
+      'label' => 'Execute PHP',
+    ),
+    // The machine name of the theme.  
+    'theme' => 'bootstrap_mint',
+    'visibility' => array(),
+    'weight' => 100,
+  );
+  $block = \Drupal\block\Entity\Block::create($values);
+  $block->save();
 }
