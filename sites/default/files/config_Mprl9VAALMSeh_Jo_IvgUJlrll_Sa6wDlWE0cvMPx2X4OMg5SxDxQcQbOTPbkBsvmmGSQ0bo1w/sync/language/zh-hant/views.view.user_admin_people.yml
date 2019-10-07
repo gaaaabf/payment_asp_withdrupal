@@ -1,6 +1,8 @@
-label: 使用者
-description: 尋找及管理網站使用者。
 display:
+  page_4:
+    display_title: 我的頁面
+    display_options:
+      title: 我的頁面
   default:
     display_options:
       exposed_form:
@@ -39,6 +41,8 @@ display:
           label: 最近存取時間
         operations:
           label: 操作
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:
@@ -71,7 +75,5 @@ display:
       tab_options:
         title: 使用者
         description: 管理使用者帳號、角色與權限。
-  page_4:
-    display_title: 我的頁面
-    display_options:
-      title: 我的頁面
+label: 使用者
+description: 尋找及管理網站使用者。

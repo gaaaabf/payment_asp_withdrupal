@@ -1,6 +1,8 @@
-label: ユーザー
-description: サイトにアクセスするユーザーの抽出と管理
 display:
+  page_4:
+    display_title: マイページ
+    display_options:
+      title: マイページ
   default:
     display_title: マスター
     display_options:
@@ -40,6 +42,8 @@ display:
           label: 前回のアクセス
         operations:
           label: 操作
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:
@@ -72,7 +76,5 @@ display:
       tab_options:
         title: ユーザー
         description: ユーザーアカウント、ロール、権限の管理をします。
-  page_4:
-    display_title: マイページ
-    display_options:
-      title: マイページ
+label: ユーザー
+description: サイトにアクセスするユーザーの抽出と管理

@@ -1,0 +1,20 @@
+uuid: f5ff9b81-b00c-4aea-bc4a-8385c25514fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+id: testing
+label: testing
+code: "jQuery(document).ready(function($) { \r\n  var uurl = window.location.href;\r\n  var langs = [\"lang=ja\", \"lang=en\", \"lang=zh-hans\"];\r\n  // first split\r\n  uurl = uurl.split('/');\r\n  uurl = uurl.splice(3);\r\n  uurl = uurl.join('/');\r\n  // second split\r\n  uurl = uurl.split('?');\r\n  for (i = 0; i < 2; i++) {\r\n    var index = uurl.indexOf(langs[i]);\r\n    \r\n      if(index > 0) {\r\n        uurl[index] = ' ';\r\n        uurl = uurl.join('/');\r\n        window.history.replaceState({}, document.title, \"/\" + uurl);\r\n      }\r\n  }\r\n\r\n  \r\n});"
+noscript: ''
+noscriptRegion: {  }
+jquery: false
+header: false
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    pages: '/admin/*'
+    negate: true
+conditions_require_all: true

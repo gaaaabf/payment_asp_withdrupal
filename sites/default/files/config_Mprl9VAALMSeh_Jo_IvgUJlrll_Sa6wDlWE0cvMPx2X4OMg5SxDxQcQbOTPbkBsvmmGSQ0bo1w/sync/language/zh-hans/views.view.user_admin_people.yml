@@ -1,6 +1,8 @@
-label: 人员
-description: 查找并管理和站点进行交互的用户。
 display:
+  page_4:
+    display_title: 我的页面
+    display_options:
+      title: 我的页面
   default:
     display_title: 主
     display_options:
@@ -40,6 +42,8 @@ display:
           label: 上次访问
         operations:
           label: 操作
+        mail:
+          separator: ', '
       filters:
         combine:
           expose:
@@ -72,7 +76,5 @@ display:
       tab_options:
         title: 人员
         description: 管理用户账号、角色和权限。
-  page_4:
-    display_title: 我的页面
-    display_options:
-      title: 我的页面
+label: 人员
+description: 查找并管理和站点进行交互的用户。
