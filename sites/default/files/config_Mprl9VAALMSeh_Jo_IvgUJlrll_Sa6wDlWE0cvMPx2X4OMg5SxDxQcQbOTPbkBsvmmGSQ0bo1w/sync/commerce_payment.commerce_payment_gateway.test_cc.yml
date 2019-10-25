@@ -1,0 +1,21 @@
+uuid: 30b988fc-c128-44e2-87be-94c64002f825
+langcode: en
+status: true
+dependencies:
+  module:
+    - payment_asp
+id: test_cc
+label: test_cc
+weight: null
+plugin: payment_asp_credit_card
+configuration:
+  merchant_id: '30132'
+  service_id: '103'
+  hashkey: ed679e1c9f90c2ab96b25d5c580b58e25192eb5d
+  display_label: 'Payment ASP Credit Card'
+  mode: test
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

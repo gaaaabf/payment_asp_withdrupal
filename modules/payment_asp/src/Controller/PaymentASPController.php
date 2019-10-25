@@ -7,18 +7,15 @@
 	  
 	  }
 
-    public function getOrderDetails() {
-    	$uid = \Drupal::currentUser()->id();
-    	$current_uri = \Drupal::request()->getRequestUri();
-    	$current_uri = explode('/', $current_uri);
-    	$order_id = $current_uri[3];
-    	// $order = \Drupal::entityTypeManager()
-			  // ->getStorage('commerce_order')
-			  // ->loadByProperties(['uid' => $uid	, 'cart' => '0']);
-    	// $store = \Drupal::service('commerce_store.current_store')->getStore();
-    	// $cart = \Drupal::service('commerce_cart.cart_provider')
-  			// ->getCart('default', $store);
-    	$order = \Drupal\commerce_order\Entity\Order::load($order_id);
+    public function getOrderDetails($order) {
+    	// $uid = \Drupal::currentUser()->id();
+    	// $current_uri = \Drupal::request()->getRequestUri();
+    	// $current_uri = explode('/', $current_uri);
+    	// $order_id = $current_uri[3];
+
+    	// $order = \Drupal\commerce_order\Entity\Order::load($order_id);
+
+      $order_id = $order->id();
 
       $orderDetail = [];
       $perItem = [];
@@ -34,7 +31,8 @@
         $taxPercentage = $taxEntity[0]->getPercentage()*100;
         $perItem['dtl_tax'] = (string)$taxPercentage.'%';
 
-        $orderDetail['orderDetail'.$i] = $perItem;
+        array_push($orderDetail, $perItem);
+        // $orderDetail['orderDetail'.$i] = $perItem;
       }
 
       $data_needed = array(
@@ -48,15 +46,15 @@
       return $data_needed;
     }
 
-    public function getOrderDeatilsAPI() {
+    public function getOrderDeatilsAPI($merchant_id, $service_id, $hashkey, $order) {
 
-      $data = $this->getOrderDetails();
+      $data = $this->getOrderDetails($order);
 
       // API送信データ
-      $merchant_id              = "30132";
-      $service_id               = "002";
-      $cust_code                = "Merchant_TestUser_999999";
-      $order_id                 = "160d3025eb048d0dd5572de36ece7f5b";
+      $merchant_id              = $merchant_id;
+      $service_id               = $service_id;
+      $cust_code                = $data['cust_code'].date("Ymdhms");
+      $order_id                 = $data['order_id'];
       $item_id                  = "ITEMID00000000000000000000000001";
       $item_name                = "テスト商品";
       $tax                      = "1";
@@ -65,15 +63,18 @@
       $free2                    = "";
       $free3                    = "";
       $order_rowno              = "";
-      $sps_cust_info_return_flg = "1";  
-      $cc_number                = "5250729026209007";
-      $cc_expiration            = "201103";
-      $security_code            = "798";
+      $sps_cust_info_return_flg = "1";
+      $cc_number                = $_SESSION["cc_data"]['number'];
+      $cc_expiration            = $_SESSION["cc_data"]['expiration'];
+      $security_code            = $_SESSION["cc_data"]['security_code'];
+      // $cc_number                = "5250729026209007";
+      // $cc_expiration            = "201103";
+      // $security_code            = "798";
       $cust_manage_flg          = "0";
       $encrypted_flg            = "0";
-      $request_date             = "20191001185557";
+      $request_date             = date("Ymdhms");
       $limit_second             = "";
-      $hashkey                  = "8435dbd48f2249807ec216c3d5ecab714264cc4a";
+      $hashkey                  = $hashkey;
 
       // Shift_JIS変換
       $merchant_id              = mb_convert_encoding($merchant_id, 'Shift_JIS', 'UTF-8');
@@ -97,7 +98,6 @@
       $request_date             = mb_convert_encoding($request_date, 'Shift_JIS', 'UTF-8');
       $limit_second             = mb_convert_encoding($limit_second, 'Shift_JIS', 'UTF-8');
       $hashkey                  = mb_convert_encoding($hashkey, 'Shift_JIS', 'UTF-8');
-
 
       // 送信情報データ連結
       $result =
@@ -128,7 +128,7 @@
 
       // POSTデータ生成
       $postdata =
-          "<?xml version=\"1.0\" encoding=\"Shift_JIS\"?" .
+          "<?xml version=\"1.0\" encoding=\"Shift_JIS\"?>" .
           "<sps-api-request id=\"ST01-00101-101\">" .
               "<merchant_id>"                 . $merchant_id              . "</merchant_id>" .
               "<service_id>"                  . $service_id               . "</service_id>" .
@@ -160,5 +160,63 @@
           "</sps-api-request>";
 
       return $postdata;
+    }
+
+    public function getRefundDetails() {
+
+      // $query = \Drupal::database();
+      
+
+      // API送信データ
+      $merchant_id = '';
+      $service_id = '';
+      $sps_transaction_id = ''; 
+      $tracking_id = '';
+      $processing_datetime = '';
+      $amount = '';
+      $request_date = '';
+      $limit_second = '';
+
+      // Shift_JIS変換
+      $merchant_id              = mb_convert_encoding($merchant_id, 'Shift_JIS', 'UTF-8');
+      $service_id               = mb_convert_encoding($service_id, 'Shift_JIS', 'UTF-8');
+      $sps_transaction_id       = mb_convert_encoding($sps_transaction_id, 'Shift_JIS', 'UTF-8');
+      $tracking_id              = mb_convert_encoding($tracking_id, 'Shift_JIS', 'UTF-8');
+      $processing_datetime      = mb_convert_encoding($processing_datetime, 'Shift_JIS', 'UTF-8');
+      $amount                   = mb_convert_encoding($amount, 'Shift_JIS', 'UTF-8');
+      $request_date             = mb_convert_encoding($request_date, 'Shift_JIS', 'UTF-8');
+      $limit_second             = mb_convert_encoding($limit_second, 'Shift_JIS', 'UTF-8');
+
+      // 送信情報データ連結
+      $result =
+        $merchant_id .
+        $service_id .
+        $sps_transaction_id .
+        $tracking_id .
+        $processing_datetime .
+        $amount .
+        $request_date .
+        $limit_second;
+
+      // SHA1変換
+      $sps_hashcode = sha1( $result );
+
+      // POSTデータ生成
+      $postdata =
+          "<?xml version=\"1.0\" encoding=\"Shift_JIS\"?>" .
+          "<sps-api-request id=\"ST02-00303-101\">" .
+              "<merchant_id>"                 . $merchant_id              . "</merchant_id>" .
+              "<service_id>"                  . $service_id               . "</service_id>" .
+              "<sps_transaction_id>"          . $sps_transaction_id       . "</sps_transaction_id>" .
+              "<tracking_id>"                 . $tracking_id              . "</tracking_id>" .
+              "<processing_datetime>"         . $processing_datetime      . "</processing_datetime>" .
+              "<amount>"                      . $amount                   . "</amount>" .
+              "<request_date>"                . $request_date             . "</request_date>" .
+              "<limit_second>"                . $limit_second             . "</limit_second>" .
+              "<sps_hashcode>"                . $sps_hashcode             . "</sps_hashcode>" .
+          "</sps-api-request>";
+
+      return $postdata;
+
     }
   }

@@ -9,41 +9,52 @@
  * Implements hook_schema().
  */
 function payment_asp_schema() {
-  $schema['payment_asp_payment_method'] = array(
+  $schema['payment_asp_pd'] = array(
     'description' => 'Track where a file is used.',
     'fields' => array(
-      'payment_method_id' => array(
+      'pd_id' => array(
         'description' => 'ID.',
         'type' => 'int',
         'unsigned' => TRUE,
         'not null' => TRUE,
       ),
-      'fk_user_id' => array(
-        'description' => 'User foreign key',
+      'p_fk_id' => array(
+        'description' => 'Payment foreign key',
         'type' => 'int',
         'unsigned' => TRUE,
         'not null' => TRUE,
       ),
-      'type' => array(
-        'description' => 'The name of the object type in which the file is used.',
-        'type' => 'varchar_ascii',
-        'length' => 64,
+      'sps_transaction_id' => array(
+        'description' => 'Tracking ID for payment trasaction to SBS',
+        'type' => 'int',
+        'unsigned' => TRUE,
         'not null' => TRUE,
-        'default' => '',
+      ),
+      'tracking_id' => array(
+        'description' => 'Tracking ID for payment trasaction to SBS',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'processing_datetime' => array(
+        'description' => 'Datetime proccessing',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
       ),
     ),
     'primary key' => array(
-      'payment_method_id', 
+      'pd_id', 
     ),
     'indexes' => array(
-      'fk_user_id' => array(
-        'fk_user_id',
+      'p_fk_id' => array(
+        'p_fk_id',
       ),
     ),
     'foreign keys' => array(
-      'fk_user_id' => array(
-        'table' => 'users',
-        'columns' => array('uid' => 'uid'),
+      'p_fk_id' => array(
+        'table' => 'commerce_payment',
+        'columns' => array('payment_id' => 'payment_id'),
       ),
     ),
   );
@@ -54,21 +65,21 @@ function payment_asp_schema() {
  * Implements hook_install().
  */
 function payment_asp_install() {
-  $values = array(
-    // A unique ID for the block instance.
-    'id' => 'paymentasp_checkout_block',
-    // The plugin block id as defined in the class.
-    'plugin' => 'PaymentASP Checkout Block',
-    // The machine name of the theme region.
-    'region' => 'content',
-    'settings' => array(
-      'label' => 'Execute PHP',
-    ),
-    // The machine name of the theme.  
-    'theme' => 'bootstrap_mint',
-    'visibility' => array(),
-    'weight' => 100,
-  );
-  $block = \Drupal\block\Entity\Block::create($values);
-  $block->save();
+  // $values = array(
+  //   // A unique ID for the block instance.
+  //   'id' => 'paymentasp_checkout_block',
+  //   // The plugin block id as defined in the class.
+  //   'plugin' => 'PaymentASP Checkout Block',
+  //   // The machine name of the theme region.
+  //   'region' => 'content',
+  //   'settings' => array(
+  //     'label' => 'Execute PHP',
+  //   ),
+  //   // The machine name of the theme.  
+  //   'theme' => 'bootstrap_mint',
+  //   'visibility' => array(),
+  //   'weight' => 100,
+  // );
+  // $block = \Drupal\block\Entity\Block::create($values);
+  // $block->save();
 }
